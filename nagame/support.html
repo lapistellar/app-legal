@@ -1,1 +1,199 @@
-<h1>nagame Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nagame サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #1f2426;
+    background: #ece7dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e4e6e5; background: #0f1214; }
+    a { color: #63a68f; }
+    hr { border-color: #2b3134; }
+    .meta { color: #8b9391; }
+    dt { color: #e4e6e5; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; border-bottom: 1px solid rgba(80,120,110,.35); padding-bottom: .3rem; }
+  .meta { color: #667070; font-size: .9rem; margin-top: 0; }
+  a { color: #3d7d68; }
+  hr { border: 0; border-top: 1px solid #cfc9bb; margin: 3rem 0; }
+  ul, ol { padding-left: 1.3rem; }
+  dt { font-weight: 600; margin-top: 1.1rem; }
+  dd { margin-left: 0; padding-left: 1rem; border-left: 2px solid rgba(80,120,110,.3); }
+</style>
+</head>
+<body>
+
+<h1>Nagame（眺め）サポート</h1>
+<p class="meta">最終更新日：2026年7月25日</p>
+
+<p>
+Nagame は、一枚の絵を数分かけてゆっくり観るための、一人用の美術館アプリです。
+常設展示の6点から一点を選び、暗がりのなかで灯りを手がかりに絵を眺め、
+観終わったら半券が発行されて、あなたの「観た」が積み重なっていきます。
+</p>
+
+<h2>使いかた</h2>
+<ol>
+  <li><strong>作品を選ぶ</strong> — 展示室（ホーム）には常設の6点が並んでいます。
+      まだ観ていない作品には覆い布がかかっていて、絵は見えません。気になった一点をタップします。</li>
+  <li><strong>時間を決めて観はじめる</strong> — 鑑賞する時間を 1分・3分・5分・10分 から選び、「観る」を押します。
+      既定の時間は設定画面で変えられます。</li>
+  <li><strong>灯りで絵をたどる</strong> — 画面は暗く、指でなぞったところだけが灯りで照らされ、その部分が拡大して見えます。
+      時間の経過とともに照明は三段階で広がり、最後は絵の全体が見えるようになります。
+      途中、絵の見かたを促す問いが4回だけ静かに現れます。残り時間を知りたいときは画面を長押ししてください。</li>
+  <li><strong>半券を綴じる</strong> — 観終わると半券が発行され、朱の割印が押されます。
+      「気づいた語」のタグ（光・影・静けさ・ぬくもりなど）を選び、必要なら一行だけメモを添えて「綴じる」を押します。
+      捨てることもできます。</li>
+  <li><strong>半券棚を眺める</strong> — 綴じた半券は半券棚に重なって積まれていきます。
+      上部に観た回数・累計時間・観た作品数が出ます。半券をタップすると拡大表示になります。</li>
+</ol>
+
+<h2>よくある質問</h2>
+<dl>
+  <dt>作品は誰の絵ですか？</dt>
+  <dd>常設の6点は、このアプリのために描き下ろした架空の作品です。実在の作家・作品・美術館とは関係ありません。</dd>
+
+  <dt>作品は増えますか？</dt>
+  <dd>現在のバージョンでは常設の6点のみです。同じ絵を何度観ても構いません（むしろ、二度目に見えてくるものがあります）。</dd>
+
+  <dt>覆い布はどうすれば外れますか？</dt>
+  <dd>その作品を一度でも最後まで観て半券を綴じると、覆い布が外れて展示室に絵が並ぶようになります。</dd>
+
+  <dt>鑑賞の途中でやめられますか？</dt>
+  <dd>できます。中断すると確認が出ます。中断した場合、その回の半券は発行されません。</dd>
+
+  <dt>データはどこに保存されますか？</dt>
+  <dd>すべて端末内にのみ保存されます。サーバーに送信されることはありません。詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</dd>
+
+  <dt>他の端末とデータを同期できますか？</dt>
+  <dd>現在のバージョンでは同期に対応していません。データは端末内にのみ保存されます。</dd>
+
+  <dt>半券を削除できますか？</dt>
+  <dd>できます。半券棚の一覧で半券を左にスワイプすると削除できます。</dd>
+
+  <dt>アプリを削除するとデータはどうなりますか？</dt>
+  <dd>端末から削除すると、保存されていた半券と統計はすべて消えます。復元はできませんのでご注意ください。</dd>
+
+  <dt>画面が暗くて見えにくいのですが</dt>
+  <dd>暗がりのなかで灯りを頼りに観るのが本アプリの体験です。演出が強すぎると感じる場合は、
+      設定画面の「灯りの演出」を切ると、鑑賞中も明るい状態のままご利用いただけます。</dd>
+
+  <dt>通知や連続記録（ストリーク）はありますか？</dt>
+  <dd>ありません。毎日の課題も連続日数もありません。観たいときに観るためのアプリです。</dd>
+
+  <dt>オフラインでも使えますか？</dt>
+  <dd>はい。本アプリは完全にオフラインで動作します。インターネット接続は不要です。</dd>
+
+  <dt>広告や課金はありますか？</dt>
+  <dd>ありません。広告表示・アプリ内課金ともに一切ありません。</dd>
+
+  <dt>表示言語や外観を変えられますか？</dt>
+  <dd>設定画面から、言語（システム／日本語／English）と外観（システム／ライト／ダーク）を切り替えられます。</dd>
+</dl>
+
+<h2>お問い合わせ</h2>
+<p>
+不具合のご報告・ご要望・ご質問は、以下までお気軽にご連絡ください。
+数日以内にお返事します。<br>
+メール：<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>
+</p>
+<p>
+不具合のご報告の際は、次の情報を添えていただけると助かります：
+端末の機種（例：iPhone 17 Pro）／iOS のバージョン／アプリのバージョン（設定画面の「アプリについて」に表示されます）／
+どんな操作をしたときに起きたか。
+</p>
+
+<hr>
+
+<h1 id="en">Nagame — Support</h1>
+<p class="meta">Last updated: July 25, 2026</p>
+
+<p>
+Nagame is a one-person museum for looking at a single painting slowly, for a few minutes at a time.
+Choose one of the six works in the permanent collection, follow it in the dark by the light under your finger,
+and when you are done a ticket stub is issued — so the time you spent looking quietly adds up.
+</p>
+
+<h2>Getting Started</h2>
+<ol>
+  <li><strong>Choose a work</strong> — The gallery (home) holds six works. Anything you have not yet seen stays
+      under a cover cloth, so the painting is hidden. Tap whichever one draws you in.</li>
+  <li><strong>Pick how long to look</strong> — Choose 1, 3, 5, or 10 minutes, then tap "Look."
+      You can change the default length in Settings.</li>
+  <li><strong>Follow the light</strong> — The screen is dark, and only the part under your finger is lit and magnified.
+      As time passes the lighting opens out in three stages until the whole painting is visible.
+      Four quiet questions appear along the way to shape how you look. Press and hold to check the time remaining.</li>
+  <li><strong>Keep the stub</strong> — When the session ends a ticket stub is issued and stamped in vermilion.
+      Choose the tags for what you noticed (light, shadow, quiet, warmth, and more), optionally add a single line
+      of your own, and tap "Keep." You can also throw it away.</li>
+  <li><strong>Look over the shelf</strong> — Kept stubs stack up on the stub shelf, with your session count,
+      total time, and works seen shown above. Tap a stub to enlarge it.</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+<dl>
+  <dt>Who painted these works?</dt>
+  <dd>The six works were created for this app and are fictional. They are not related to any real artist, artwork, or museum.</dd>
+
+  <dt>Will more works be added?</dt>
+  <dd>This version has the six in the permanent collection. You are welcome to look at the same painting many times —
+      in fact, something usually surfaces on the second viewing.</dd>
+
+  <dt>How do I remove the cover cloth?</dt>
+  <dd>Look at that work through to the end once and keep the stub. The cloth then comes off and the painting joins the gallery.</dd>
+
+  <dt>Can I stop partway through?</dt>
+  <dd>Yes. You will be asked to confirm. If you stop early, no stub is issued for that session.</dd>
+
+  <dt>Where is my data stored?</dt>
+  <dd>Entirely on your device. Nothing is sent to a server. See the <a href="./privacy.html">Privacy Policy</a> for details.</dd>
+
+  <dt>Can I sync between devices?</dt>
+  <dd>Not in this version. Your data lives only on the device where you created it.</dd>
+
+  <dt>Can I delete a stub?</dt>
+  <dd>Yes. Swipe left on any stub in the shelf to delete it.</dd>
+
+  <dt>What happens to my data if I delete the app?</dt>
+  <dd>Deleting the app removes all your stubs and statistics. This cannot be undone.</dd>
+
+  <dt>The screen is too dark for me.</dt>
+  <dd>Looking by lamplight in the dark is the heart of the experience. If it feels like too much,
+      turn off "Lighting effect" in Settings and the painting stays fully lit throughout the session.</dd>
+
+  <dt>Are there notifications or streaks?</dt>
+  <dd>No. There are no daily goals and no streak counts. This is an app for looking when you feel like looking.</dd>
+
+  <dt>Does it work offline?</dt>
+  <dd>Yes. The app is fully offline and needs no internet connection.</dd>
+
+  <dt>Are there ads or in-app purchases?</dt>
+  <dd>No. There is no advertising and there are no in-app purchases.</dd>
+
+  <dt>Can I change the language or appearance?</dt>
+  <dd>Yes. In Settings you can switch language (System / 日本語 / English) and appearance (System / Light / Dark).</dd>
+</dl>
+
+<h2>Contact</h2>
+<p>
+For bug reports, feature requests, or questions, please get in touch. I usually reply within a few days.<br>
+Email: <a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>
+</p>
+<p>
+When reporting a bug, it helps to include: your device model (e.g. iPhone 17 Pro), your iOS version,
+the app version (shown under "About" in Settings), and what you were doing when it happened.
+</p>
+
+</body>
+</html>
