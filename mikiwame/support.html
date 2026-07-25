@@ -1,1 +1,221 @@
-<h1>mikiwame Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mikiwame サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #171b21;
+    background: #eae0cb;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f2ece0; background: #141a22; }
+    a { color: #d9a13b; }
+    hr { border-color: #2a323c; }
+    .meta { color: #8d9298; }
+    dt { color: #f2ece0; }
+    dd { border-left-color: rgba(217,161,59,.4); }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; border-bottom: 1px solid rgba(183,51,43,.35); padding-bottom: .3rem; }
+  .meta { color: #6b6257; font-size: .9rem; margin-top: 0; }
+  a { color: #b7332b; }
+  hr { border: 0; border-top: 1px solid #cfc4ab; margin: 3rem 0; }
+  ul, ol { padding-left: 1.3rem; }
+  dt { font-weight: 600; margin-top: 1.1rem; }
+  dd { margin-left: 0; padding-left: 1rem; border-left: 2px solid rgba(183,51,43,.3); }
+</style>
+</head>
+<body>
+
+<h1>Mikiwame（見極め）サポート</h1>
+<p class="meta">最終更新日：2026年7月26日</p>
+
+<p>
+Mikiwame は、詐欺の手口を模した架空の物証を検分する、一人用の鑑定室です。
+届いたSMS・メール・通知・封書などを卓上で眺め、怪しいところを指でなぞって朱印を打ち、
+「偽物」か「本物」かを見極めます。判定したあとの講評で、見つけた手掛かりと見落とした手掛かりが分かります。
+</p>
+
+<h2>使いかた</h2>
+<ol>
+  <li><strong>事案を開く</strong> — 鑑定室（ホーム）に、その日の事案が未開封の状態で置かれています。
+      「検分する」を押すと卓上に物証が出ます。</li>
+  <li><strong>物証を検分する</strong> — 画面の物証をよく見ます。右下のルーペを押すと、指でなぞった部分が拡大されます
+      （ルーペは設定で切ることもできます）。</li>
+  <li><strong>朱印を打つ</strong> — 怪しいと思った箇所を指でなぞって囲むと、手描きの朱い印が付きます。
+      短くタップすると小さな丸印になります。印は1件につき最大6つまで。「取り消し」で直前の印を消せます。</li>
+  <li><strong>判定を下す</strong> — 「判定を下す」を押し、「偽物」か「本物」かを選びます。</li>
+  <li><strong>講評を読む</strong> — 正解の手掛かりが琥珀の枠で示され、見落とした箇所は点滅します。
+      点数は「判定 60点＋手掛かり 40点」で、本物を一つも囲まずに正しく見抜くと100点です。</li>
+  <li><strong>手引きと台帳</strong> — 見つけた手掛かりの型（差出人・緊急性・経路・支払い・折り返し・秘密・認証情報・版面の粗さ）は
+      「見破りの型」に少しずつ解禁されていきます。過去の検分は「台帳を見る」から振り返れます。</li>
+</ol>
+
+<h2>よくある質問</h2>
+<dl>
+  <dt>収録されている事案は実在のものですか？</dt>
+  <dd>いいえ。事案・差出人・企業名・団体名・電話番号・アドレスはすべて、このアプリのために作った架空のものです。
+      実在の企業・団体・金融機関・行政機関とは関係ありません。</dd>
+
+  <dt>私に届いた本物のメールやSMSを判定できますか？</dt>
+  <dd>できません。本アプリは利用者の実際のメール・SMS・通話履歴・通知を読み取りません。
+      検分できるのは、アプリに同梱された架空の物証だけです。本アプリは「見分ける目」を養うための練習道具です。</dd>
+
+  <dt>本物の事案も混ざっているのですか？</dt>
+  <dd>はい。すべてが偽物ではありません。本物を「偽物」と判定すると減点されます。
+      疑いすぎないことも、見極めのうちです。</dd>
+
+  <dt>「見極め力」はどう決まりますか？</dt>
+  <dd>直近の検分の点数から算出されます。数値に応じて、見習い → 三等鑑定 → 二等鑑定 → 一等鑑定 → 主任鑑定 と階級が上がります。</dd>
+
+  <dt>手引き（見破りの型）はどうすれば解禁されますか？</dt>
+  <dd>その型の手掛かりを検分で実際に見つけると解禁されます。未解禁の型は伏せ字で表示されます。</dd>
+
+  <dt>同じ事案をもう一度検分できますか？</dt>
+  <dd>できます。一巡したあとは再検分として出題されます。二度目は、一度目に見落とした箇所に気づけるかどうかが要です。</dd>
+
+  <dt>朱印は何個まで打てますか？</dt>
+  <dd>1件につき6つまでです。上限に達すると画面に案内が出ます。片っ端から囲んでも点にはなりません。</dd>
+
+  <dt>ルーペが使いにくいのですが</dt>
+  <dd>設定画面の「ルーペを使う」を切ると、ルーペのボタンが出なくなります。朱印だけで検分できます。</dd>
+
+  <dt>データはどこに保存されますか？</dt>
+  <dd>すべて端末内にのみ保存されます。サーバーに送信されることはありません。
+      詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</dd>
+
+  <dt>記録を消せますか？</dt>
+  <dd>設定画面の「記録をすべて消す」で、検分の記録と手引きの解禁をまとめて消去できます。元に戻せませんのでご注意ください。</dd>
+
+  <dt>他の端末とデータを同期できますか？</dt>
+  <dd>現在のバージョンでは同期に対応していません。データは端末内にのみ保存されます。</dd>
+
+  <dt>オフラインでも使えますか？</dt>
+  <dd>はい。本アプリは完全にオフラインで動作します。インターネット接続は不要です。</dd>
+
+  <dt>広告や課金はありますか？</dt>
+  <dd>ありません。広告表示・アプリ内課金ともに一切ありません。</dd>
+
+  <dt>表示言語や外観を変えられますか？</dt>
+  <dd>設定画面から、言語（システム／日本語／English）と外観（システム／ライト／ダーク）を切り替えられます。</dd>
+
+  <dt>実際に詐欺の被害に遭いそうなときは？</dt>
+  <dd>本アプリは練習用の道具で、法律や金銭に関する助言は行いません。
+      不審な連絡を受けた場合は、相手が名乗った先へその連絡に書かれた番号でかけ直さず、
+      公式の窓口やお住まいの自治体・警察の相談窓口など、<strong>自分で調べた正規の連絡先</strong>にご相談ください。</dd>
+</dl>
+
+<h2>お問い合わせ</h2>
+<p>
+不具合のご報告・ご要望・ご質問は、以下までお気軽にご連絡ください。数日以内にお返事します。<br>
+メール：<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>
+</p>
+<p>
+不具合のご報告の際は、次の情報を添えていただけると助かります：
+端末の機種（例：iPhone 17 Pro）／iOS のバージョン／アプリのバージョン（設定画面に表示されます）／
+どんな操作をしたときに起きたか。
+</p>
+
+<hr>
+
+<h1 id="en">Mikiwame — Support</h1>
+<p class="meta">Last updated: July 26, 2026</p>
+
+<p>
+Mikiwame is a one-person examination room for fictional exhibits modelled on common scams.
+A text message, an email, a push notification, or a letter is laid on the desk; you look it over,
+circle anything that seems wrong with your finger, and decide whether it is fake or genuine.
+The debrief afterwards shows which clues you caught and which you missed.
+</p>
+
+<h2>Getting Started</h2>
+<ol>
+  <li><strong>Open the case</strong> — Today's case sits unopened in the examination room.
+      Tap "Examine" to lay the exhibit on the desk.</li>
+  <li><strong>Look it over</strong> — Study the exhibit. Tap the lens button at the bottom right to magnify
+      whatever is under your finger (the lens can be turned off in Settings).</li>
+  <li><strong>Mark it</strong> — Drag your finger around anything suspicious and a hand-drawn vermilion mark appears.
+      A short tap leaves a small circle. Up to six marks per case; "Undo" removes the last one.</li>
+  <li><strong>Give your verdict</strong> — Tap "Give verdict" and choose Fake or Genuine.</li>
+  <li><strong>Read the debrief</strong> — The real clues are outlined in amber, and anything you missed blinks.
+      Scoring is 60 points for the verdict plus 40 for the clues; a genuine item called correctly with no
+      marks at all scores 100.</li>
+  <li><strong>Handbook and ledger</strong> — Each clue type you find (sender, urgency, route, payment, callback,
+      secrecy, credentials, sloppy typesetting) unlocks in the handbook. Past examinations are in the ledger.</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+<dl>
+  <dt>Are the cases real?</dt>
+  <dd>No. Every case, sender, company, organisation, phone number, and address was written for this app.
+      None of them refer to any real company, organisation, bank, or public body.</dd>
+
+  <dt>Can it check a real message I received?</dt>
+  <dd>No. The App never reads your real email, text messages, call history, or notifications.
+      You can only examine the fictional exhibits that ship with the App — it is a tool for training your eye.</dd>
+
+  <dt>Are some of the cases genuine?</dt>
+  <dd>Yes. Not everything is a fake, and calling a genuine item "fake" costs you points.
+      Not being over-suspicious is part of the skill.</dd>
+
+  <dt>How is my skill rating calculated?</dt>
+  <dd>From your recent scores. As it rises you move up through Apprentice, Third, Second, First, and Chief Examiner.</dd>
+
+  <dt>How do I unlock handbook entries?</dt>
+  <dd>Find a clue of that type during an examination. Locked entries stay redacted.</dd>
+
+  <dt>Can I re-examine a case?</dt>
+  <dd>Yes. Once you have been through them all, cases come back for re-examination.
+      The second time is about catching what you missed the first time.</dd>
+
+  <dt>How many marks can I make?</dt>
+  <dd>Six per case. A notice appears when you reach the limit — circling everything will not earn you points.</dd>
+
+  <dt>I find the lens awkward.</dt>
+  <dd>Turn off "Use the lens" in Settings and the lens button disappears. You can examine with marks alone.</dd>
+
+  <dt>Where is my data stored?</dt>
+  <dd>Entirely on your device. Nothing is sent to a server. See the <a href="./privacy.html">Privacy Policy</a> for details.</dd>
+
+  <dt>Can I erase my records?</dt>
+  <dd>Yes. "Erase all records" in Settings clears your examinations and your handbook progress. This cannot be undone.</dd>
+
+  <dt>Can I sync between devices?</dt>
+  <dd>Not in this version. Your data lives only on the device where you created it.</dd>
+
+  <dt>Does it work offline?</dt>
+  <dd>Yes. The app is fully offline and needs no internet connection.</dd>
+
+  <dt>Are there ads or in-app purchases?</dt>
+  <dd>No. There is no advertising and there are no in-app purchases.</dd>
+
+  <dt>Can I change the language or appearance?</dt>
+  <dd>Yes. In Settings you can switch language (System / 日本語 / English) and appearance (System / Light / Dark).</dd>
+
+  <dt>What if I am actually being targeted by a scam?</dt>
+  <dd>This app is practice, and it does not give legal or financial advice.
+      If you receive a suspicious message, do not call back on the number it provides — contact the
+      organisation through a number or address you have <strong>looked up yourself</strong>, or your local
+      consumer-advice or police helpline.</dd>
+</dl>
+
+<h2>Contact</h2>
+<p>
+For bug reports, feature requests, or questions, please get in touch. I usually reply within a few days.<br>
+Email: <a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>
+</p>
+<p>
+When reporting a bug, it helps to include: your device model (e.g. iPhone 17 Pro), your iOS version,
+the app version (shown in Settings), and what you were doing when it happened.
+</p>
+
+</body>
+</html>
