@@ -1,1 +1,144 @@
-<h1>aburidashi Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>炙り出し（Aburidashi）サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+         font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+         line-height: 1.8; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.5rem; border-bottom: 1px solid #8884; padding-bottom: .3rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; margin-bottom: .3rem; }
+  .updated { color: #8a8a8a; font-size: .9rem; margin-top: 0; }
+  .lede { background: #8881; border-left: 3px solid #d2793f; padding: .9rem 1rem; border-radius: 4px; }
+  hr.lang { margin: 4rem 0 2rem; border: 0; border-top: 1px solid #8884; }
+  a { color: #c26a2e; }
+  ul { padding-left: 1.3rem; }
+  table { border-collapse: collapse; width: 100%; margin-top: .5rem; }
+  th, td { border: 1px solid #8884; padding: .5rem .6rem; text-align: left; font-size: .95rem; }
+</style>
+</head>
+<body>
+
+<h1>炙り出し（Aburidashi）サポート</h1>
+<p class="updated">最終更新日：2026年7月28日</p>
+
+<p class="lede">貼った文章を指で炙ると、目に見えない文字が焦げ跡として浮かび上がる検査台です。
+完全オフラインで動作し、広告もアプリ内課金もありません。</p>
+
+<h2>使いかた</h2>
+<ul>
+  <li><strong>紙を敷く</strong>：調べたい文章をコピーして「貼る」を押すか、「書く」から直接入力します。</li>
+  <li><strong>炙る</strong>：紙の上を指でなぞると、なぞった所が温まり、隠れていた文字が焦げ跡として浮かびます。
+      一度に確かめたいときは「一気に炙る」を押してください。</li>
+  <li><strong>見取り</strong>：浮かんだ文字の種類別の内訳と、それぞれが何を意味するかを確認できます。
+      項目をタップすると、本文中の該当箇所が光ります。</li>
+  <li><strong>漉き直し</strong>：見つかった不可視文字を取り除いた清書を作り、コピーできます。</li>
+  <li><strong>炙り跡</strong>：過去に調べた記録（先頭 40 文字までの抜粋と件数のみ）を振り返れます。</li>
+  <li><strong>手引き</strong>：検出する 7 種類の文字それぞれの解説を読めます。</li>
+</ul>
+
+<h2>検出できる文字</h2>
+<table>
+  <tr><th>種類</th><th>何が起きるか</th></tr>
+  <tr><td>ゼロ幅文字</td><td>見た目は連続した文字列でも、検索・比較・コピーのたびに別物として扱われる</td></tr>
+  <tr><td>双方向制御</td><td>表示順やカーソル位置が意図せず入れ替わる</td></tr>
+  <tr><td>タグ文字</td><td>不可視のラベルや命令を文章に埋め込める（見えないプロンプト注入）</td></tr>
+  <tr><td>異体字セレクタ</td><td>直前の文字の字形を切り替え、見た目と実データがずれる</td></tr>
+  <tr><td>紛らわしい空白</td><td>単語境界やインデントがずれ、見た目では気づきにくい差分を作る</td></tr>
+  <tr><td>同形異字</td><td>URL やユーザー名のなりすまし。見た目は同じでも別の文字</td></tr>
+  <tr><td>制御文字</td><td>表示されないまま処理系の挙動を変える</td></tr>
+</table>
+
+<h2>よくある質問</h2>
+
+<h3>調べた文章はどこかに送られますか？</h3>
+<p>いいえ。解析はすべて端末内で完結し、本アプリはインターネット通信を一切行いません。
+本文が保存されることもありません（詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください）。</p>
+
+<h3>「炙り跡」には何が残りますか？</h3>
+<p>後から見分けるための先頭 40 文字までの抜粋と、検出件数・種類別の内訳だけです。全文は残りません。
+記録は「炙り跡」画面から個別に削除できます。</p>
+
+<h3>何も浮かび上がりません</h3>
+<p>その文章に不可視文字が含まれていない可能性が高く、正常な結果です。
+なお、コピー元のアプリによっては貼り付けの時点で不可視文字が取り除かれることがあります。
+うまく再現しないときは、元のテキストをそのまま渡せる方法（メモアプリ経由など）でお試しください。</p>
+
+<h3>表示言語や外観を変えたい</h3>
+<p>設定画面から、外観（システム／ライト／ダーク）と言語（システム／日本語／English）を切り替えられます。</p>
+
+<h3>「漉き直し」は元の意味を変えませんか？</h3>
+<p>取り除くのは不可視文字と紛らわしい空白などで、目に見える本文の文字は変更しません。
+ただし重要な文書に使う場合は、コピー後に内容をご自身で確認してください。</p>
+
+<h2>お問い合わせ</h2>
+<p>不具合のご報告・ご要望は <a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a> までお送りください。
+端末の機種と iOS のバージョン、再現手順を書き添えていただけると助かります。通常 2〜3 営業日以内に返信します。</p>
+
+<hr class="lang">
+
+<h1>Aburidashi Support</h1>
+<p class="updated">Last updated: July 28, 2026</p>
+
+<p class="lede">A hearth for your text: rub the paper with your finger and invisible characters surface as scorch
+marks. Fully offline, with no ads and no in-app purchases.</p>
+
+<h2>How to Use</h2>
+<ul>
+  <li><strong>Lay the paper</strong>: copy the text you want to inspect and tap Paste, or type it in directly.</li>
+  <li><strong>Scorch it</strong>: drag your finger across the paper. Wherever it warms up, hidden characters
+      surface as scorch marks. Tap "Scorch all" to reveal everything at once.</li>
+  <li><strong>Findings</strong>: see a per-kind breakdown of what surfaced and what each kind means.
+      Tap an entry to flash the matching spot in the text.</li>
+  <li><strong>Clean up</strong>: produce and copy a cleaned version with the hidden characters removed.</li>
+  <li><strong>History</strong>: review past scans (excerpt of up to 40 characters and counts only).</li>
+  <li><strong>Guide</strong>: read an explanation of each of the seven kinds the app detects.</li>
+</ul>
+
+<h2>What It Detects</h2>
+<table>
+  <tr><th>Kind</th><th>What it does</th></tr>
+  <tr><td>Zero-width characters</td><td>Text looks contiguous but compares, searches, and copies as something else</td></tr>
+  <tr><td>Bidirectional controls</td><td>Display order and cursor position get silently reordered</td></tr>
+  <tr><td>Tag characters</td><td>Invisible labels or instructions embedded in text (hidden prompt injection)</td></tr>
+  <tr><td>Variation selectors</td><td>Change the glyph of the preceding character, so appearance and data diverge</td></tr>
+  <tr><td>Ambiguous whitespace</td><td>Shifts word boundaries and indentation in ways you can't see</td></tr>
+  <tr><td>Homoglyphs</td><td>Look-alike characters used to spoof URLs and usernames</td></tr>
+  <tr><td>Control characters</td><td>Never render, but change how software handles the text</td></tr>
+</table>
+
+<h2>FAQ</h2>
+
+<h3>Is my text sent anywhere?</h3>
+<p>No. All analysis happens on your device and the app makes no network connections. The text itself is never
+stored — see the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+<h3>What does History keep?</h3>
+<p>Only an excerpt of up to the first 40 characters plus the number of findings and a per-kind breakdown, so you
+can tell scans apart. The full text is never kept. You can delete entries individually.</p>
+
+<h3>Nothing surfaces</h3>
+<p>Most likely the text simply contains no hidden characters — that's a normal result. Note that some apps strip
+invisible characters when you paste; if you can't reproduce a case, try transferring the original text through a
+route that preserves it exactly (for example, a plain notes app).</p>
+
+<h3>Changing language or appearance</h3>
+<p>In Settings you can switch appearance (System / Light / Dark) and language (System / 日本語 / English).</p>
+
+<h3>Does "clean up" change my meaning?</h3>
+<p>It removes only invisible characters and ambiguous whitespace; visible characters are left as they are.
+Still, please review the result yourself before using it in anything important.</p>
+
+<h2>Contact</h2>
+<p>Send bug reports and requests to <a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>.
+Including your device model, iOS version, and steps to reproduce helps a lot. We usually reply within
+2–3 business days.</p>
+
+<p class="updated">&copy; 2026 Seiru Oba</p>
+
+</body>
+</html>
