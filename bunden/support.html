@@ -1,1 +1,198 @@
-<h1>bunden Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bunden（分電） サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #1a1c1a;
+    background: #eceee7;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e8e2; background: #111311; }
+    a { color: #c8e06a; }
+    h2 { border-bottom-color: #2b2e2a; }
+    .lead { color: #a9aca5; }
+    .meta { color: #85887f; }
+    .note { background: #1c1f1c; border-left-color: #c8e06a; }
+    hr { border-top-color: #2b2e2a; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; border-bottom: 1px solid #d5d8ce; padding-bottom: 0.3rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; margin-bottom: 0.3rem; }
+  .lead { color: #5a5d57; margin-top: 0; }
+  .meta { color: #7c7f77; font-size: 0.9rem; }
+  a { color: #4d6b12; }
+  ul { padding-left: 1.3rem; }
+  .note { background: #e0e3d9; border-left: 3px solid #7f9c2a; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+  hr { border: 0; border-top: 1px solid #d5d8ce; margin: 3rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Bunden（分電） サポート</h1>
+<p class="lead">停電から電気が戻るまでを、自宅の分電盤の上で辿る盤。</p>
+
+<h2>お問い合わせ</h2>
+<p>不具合の報告・ご要望・ご質問は、こちらへメールでお送りください。</p>
+<p><a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a></p>
+<p class="meta">数日以内に返信します。返信のため、お使いの iPhone の機種と iOS のバージョン、
+どの画面で何をしたときに起きたかを添えていただけると助かります。</p>
+
+<div class="note">
+  <strong>安全に関する大切なお願い</strong><br>
+  焦げた匂い・煙・水に濡れた跡があるときは、ブレーカーを操作せず、
+  電力会社または電気工事店にご相談ください。Bunden は備えのための道具で、
+  実際の設備の安全を判断することはできません。
+</div>
+
+<h2>使い方</h2>
+
+<h3>盤の画面</h3>
+<p>主幹（メインのブレーカー）と 8 つの子回路が並んだ、自宅の分電盤を模した画面です。
+レバーは<strong>上下にスワイプ</strong>するか<strong>タップ</strong>で入／切できます。
+レバーを<strong>長押し</strong>すると、その回路の詳細画面に移ります。</p>
+
+<h3>4 つの局面</h3>
+<p>画面上部の帯で、いまの状況を切り替えます。切り替えは常にご自身の操作で行い、
+アプリが勝手に進めることはありません。</p>
+<ul>
+  <li><strong>平時</strong> — ふだんの状態。回路の台帳を整えたり、点検をしておく時間です。</li>
+  <li><strong>停電中</strong> — 主幹を落とすと盤全体が暗く沈み、レバーの蓄光部と盤の縁だけが残ります。</li>
+  <li><strong>離宅</strong> — 家を離れるときの手順を示します。</li>
+  <li><strong>復電点検</strong> — 電気が戻ったあと、回路を 1 つずつ確認してから上げていく局面です。</li>
+</ul>
+
+<h3>復電点検でレバーが動かないとき</h3>
+<p>復電点検の局面では、<strong>まだ確認していない回路のレバーは動きません</strong>。
+動かそうとすると盤が横に揺れ、確認シートが出ます。項目をすべて確認すると「入」が押せるようになります。
+通電火災を防ぐため「確認してから上げる」順序を保つ、意図した動きです。</p>
+
+<h3>回路の台帳を自宅に合わせる</h3>
+<p>回路の詳細画面で、回路名・種別（発熱するもの／水を使うもの／止めたくないもの／照明／一般コンセント）・
+アンペア・繋がっている機器のメモを編集できます。実際の分電盤の並びに合わせておくと、
+停電のときに迷いません。</p>
+
+<h3>点検</h3>
+<p>点検の画面では、回路ごとの最終点検日と未確認の項目が一覧で見られます。
+ミニチュアの盤で進み具合が分かります。</p>
+
+<h3>外観と言語の切り替え</h3>
+<p>設定の画面で、外観（システム／ライト／ダーク）と表示言語（システム／日本語／English）を切り替えられます。</p>
+
+<h2>よくある質問</h2>
+
+<h3>インターネット接続は必要ですか？</h3>
+<p>必要ありません。Bunden は<strong>完全にオフライン</strong>で動きます。通信機能そのものがないため、
+停電で Wi-Fi や回線が止まっていても、いつもと同じように使えます。</p>
+
+<h3>実際の分電盤を操作してくれるのですか？</h3>
+<p>いいえ。Bunden はあなたの家の分電盤を<strong>紙の上に写したような模型</strong>です。
+実際のブレーカーとは繋がっておらず、家電を操作することもありません。
+「どの順で、何を確認して上げるか」を体に入れておくための道具です。</p>
+
+<h3>広告や課金はありますか？</h3>
+<p>ありません。無料で、広告もアプリ内課金もありません。</p>
+
+<h3>データはどこに保存されますか？</h3>
+<p>お使いの iPhone の中だけです。詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+
+<h3>入力した内容を最初に戻したいです</h3>
+<p>設定の画面から、回路台帳と点検記録を初期状態に戻せます。</p>
+
+<h3>iPad や Mac でも使えますか？</h3>
+<p>iPhone 向けに作っています（iOS 17 以降）。</p>
+
+<h2>関連</h2>
+<p><a href="./privacy.html">プライバシーポリシー</a></p>
+
+<hr>
+
+<h1>Bunden Support</h1>
+<p class="lead">Trace a blackout through restore on your home breaker panel.</p>
+
+<h2>Contact</h2>
+<p>For bug reports, requests, or questions, please email:</p>
+<p><a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a></p>
+<p class="meta">We reply within a few days. It helps if you include your iPhone model, iOS version,
+and what you were doing on which screen when the problem occurred.</p>
+
+<div class="note">
+  <strong>Important safety note</strong><br>
+  If you notice a burning smell, smoke, or signs of water damage, do not operate your breakers —
+  consult your power company or a licensed electrician. Bunden is a preparedness tool and cannot
+  judge the condition of real equipment.
+</div>
+
+<h2>How to use</h2>
+
+<h3>The panel</h3>
+<p>The main screen models a home breaker panel: one main breaker plus eight branch circuits.
+<strong>Swipe a lever up or down</strong>, or <strong>tap</strong> it, to switch a circuit on or off.
+<strong>Long-press</strong> a lever to open that circuit's detail screen.</p>
+
+<h3>Four phases</h3>
+<p>Switch the current situation from the bar at the top. Phases only ever change when you change
+them — the app never advances on its own.</p>
+<ul>
+  <li><strong>Normal</strong> — everyday state. A good time to tidy your ledger and run inspections.</li>
+  <li><strong>Blackout</strong> — drop the main breaker and the whole panel sinks into darkness;
+      only the levers' glow-in-the-dark strips and the panel edge remain.</li>
+  <li><strong>Away</strong> — the steps to follow when leaving the house.</li>
+  <li><strong>Restoring</strong> — after power returns, check circuits one at a time before raising them.</li>
+</ul>
+
+<h3>When a lever won't move during restoring</h3>
+<p>In the restoring phase, <strong>levers for circuits you haven't checked will not move</strong>.
+Trying to move one shakes the panel and opens a confirmation sheet. Once every item is checked,
+"Switch on" becomes available. This deliberately preserves the "check first, then raise" order that
+helps prevent fires when power comes back.</p>
+
+<h3>Matching the ledger to your home</h3>
+<p>In the circuit detail screen you can edit the circuit's name, kind (heat-producing / water-using /
+must-stay-on / lighting / general outlet), ampere rating, and notes about connected appliances.
+Matching your real panel's layout means less hesitation during an actual outage.</p>
+
+<h3>Inspection</h3>
+<p>The inspection screen lists each circuit's last inspection date and any unchecked items, with a
+miniature panel showing your progress.</p>
+
+<h3>Appearance and language</h3>
+<p>In Settings you can switch appearance (System / Light / Dark) and language
+(System / Japanese / English).</p>
+
+<h2>FAQ</h2>
+
+<h3>Does it need an internet connection?</h3>
+<p>No. Bunden is <strong>fully offline</strong> — it has no networking code at all, so it works exactly
+the same when Wi-Fi and cellular are down during an outage.</p>
+
+<h3>Does it control my real breaker panel?</h3>
+<p>No. Bunden is a <strong>model</strong> of your panel. It is not connected to real breakers and does
+not control any appliance. It exists so the order — what to check, and what to raise when — is
+already in your hands before you need it.</p>
+
+<h3>Are there ads or purchases?</h3>
+<p>No. Bunden is free, with no advertising and no in-app purchases.</p>
+
+<h3>Where is my data stored?</h3>
+<p>On your iPhone only. See the <a href="./privacy.html">privacy policy</a> for details.</p>
+
+<h3>How do I reset what I entered?</h3>
+<p>From Settings you can reset the circuit ledger and inspection records to their initial state.</p>
+
+<h3>Does it work on iPad or Mac?</h3>
+<p>It is built for iPhone (iOS 17 and later).</p>
+
+<h2>Related</h2>
+<p><a href="./privacy.html">Privacy Policy</a></p>
+
+</body>
+</html>
