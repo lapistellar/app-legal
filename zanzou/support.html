@@ -1,1 +1,182 @@
-<h1>zanzou Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zanzou（残像） サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.85; max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+    background: #101010; color: #e8e4dc;
+  }
+  h1 { font-size: 1.5rem; letter-spacing: .02em; margin-bottom: .25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; padding-bottom: .35rem;
+       border-bottom: 1px solid #333; color: #ffb000; }
+  h3 { font-size: .98rem; margin-top: 1.7rem; margin-bottom: .2rem; }
+  .sub { color: #8f8a80; font-size: .875rem; margin-top: 0; }
+  .lead { background: #1a1a1a; border-left: 3px solid #ffb000;
+          padding: 1rem 1.1rem; margin: 1.75rem 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .4rem 0; }
+  a { color: #ffb000; }
+  dt { font-weight: 600; margin-top: 1.4rem; }
+  dd { margin: .3rem 0 0 0; }
+  hr { border: 0; border-top: 1px solid #333; margin: 3.5rem 0; }
+  footer { color: #8f8a80; font-size: .8rem; margin-top: 3rem; }
+  @media (prefers-color-scheme: light) {
+    body { background: #fbfaf7; color: #1a1a1a; }
+    h2, a { color: #a06800; }
+    h2 { border-bottom-color: #ddd; }
+    .lead { background: #f2eee5; border-left-color: #a06800; }
+    hr { border-top-color: #ddd; }
+    .sub, footer { color: #6b6660; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Zanzou（残像） サポート</h1>
+<p class="sub">最終更新日：2026年7月31日</p>
+
+<div class="lead">
+  <strong>Zanzou は、手持ちの写真をブラウン管に映して撮り直す暗室です。</strong><br>
+  写真を選び、9つのつまみを回して映りを追い込み、気に入った状態を書き出します。
+  すべて端末内で完結し、通信は行いません。
+</div>
+
+<h2>使いかた</h2>
+<ol>
+  <li>左端の写真ボタンから、映したい写真を選びます。</li>
+  <li>つまみを上下にドラッグして映りを調整します。調整中は画面上部に OSD（値の表示）が出ます。</li>
+  <li>管ボタンから、ブラウン管の種類（シャドウマスク／アパーチャグリル／単色管 P1・P3）を選びます。</li>
+  <li>気に入った設定は、プリセットとして名前をつけて保存できます。</li>
+  <li>書き出しボタンから、画像を「写真」アプリに保存、または共有します。</li>
+</ol>
+
+<h2>つまみの意味</h2>
+<ul>
+  <li><strong>BRIGHT</strong>：明るさ。上げると全体が持ち上がります。</li>
+  <li><strong>CONTRAST</strong>：明暗の差。</li>
+  <li><strong>FOCUS</strong>：焦点。下げるとにじみ、上げると締まります。</li>
+  <li><strong>SCAN</strong>：走査線の強さ。</li>
+  <li><strong>BLOOM</strong>：明るい部分のにじみ出し。</li>
+  <li><strong>CONVERG</strong>：色ずれ（コンバージェンス）。左右にずらすと赤青が分離します。</li>
+  <li><strong>NOISE</strong>：ざらつき。</li>
+  <li><strong>V-HOLD</strong>：垂直同期の乱れ。上下の流れを作ります。</li>
+  <li><strong>CURVE</strong>：管の曲面の強さ。</li>
+</ul>
+
+<h2>よくある質問</h2>
+<dl>
+  <dt>DEGAUSS（消磁）は何のためのボタンですか？</dt>
+  <dd>実際のブラウン管と同じく、画面を一度揺らして色ずれ（CONVERG）を戻します。
+      色をずらしすぎたときのリセットとして使えます。</dd>
+
+  <dt>POWER を押すと画面が消えます。壊れましたか？</dt>
+  <dd>故障ではありません。ブラウン管の電源を切ったときのように、映像が中央の一点へ収束して消えます。
+      もう一度押すと戻ります。</dd>
+
+  <dt>写真を選んでいないとカラーバーが出ます。</dt>
+  <dd>入力がない状態（NO SIGNAL）の表示です。写真を選ぶと映像に切り替わります。</dd>
+
+  <dt>書き出した画像はどこに保存されますか？</dt>
+  <dd>端末の「写真」アプリに保存されます。保存時にのみ写真への追加権限を使用します。</dd>
+
+  <dt>写真はどこかに送信されますか？</dt>
+  <dd>いいえ。本アプリは通信機能を持たず、すべての処理は端末内で完結します。
+      詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</dd>
+
+  <dt>表示言語や外観（ライト／ダーク）を変えたい。</dt>
+  <dd>右端の設定ボタンから、言語（システム／日本語／English）と外観モードを切り替えられます。</dd>
+
+  <dt>保存したプリセットが消えました。</dt>
+  <dd>プリセットは端末内にのみ保存されるため、アプリを削除すると消去され、復元できません。
+      機種変更時にも引き継がれません。</dd>
+
+  <dt>広告や課金はありますか？</dt>
+  <dd>ありません。本アプリは無料で、広告もアプリ内課金も含みません。</dd>
+</dl>
+
+<h2>お問い合わせ</h2>
+<p>不具合のご報告やご要望は
+<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a> までお願いします。
+お使いの iPhone の機種と iOS のバージョンを添えていただけると助かります。</p>
+
+<hr>
+
+<div lang="en">
+<h1>Zanzou — Support</h1>
+<p class="sub">Last updated: July 31, 2026</p>
+
+<div class="lead">
+  <strong>Zanzou is a darkroom where you re-shoot your own photos off a cathode-ray tube.</strong><br>
+  Pick a photo, turn the nine knobs until the picture looks right, and export what you like.
+  Everything happens on your device; the app never connects to the network.
+</div>
+
+<h2>Getting Started</h2>
+<ol>
+  <li>Tap the photo button on the left to choose a picture.</li>
+  <li>Drag the knobs up and down to adjust the picture. An on-screen display shows the value while you adjust.</li>
+  <li>Tap the tube button to choose a tube type (shadow mask, aperture grille, or P1 / P3 monochrome).</li>
+  <li>Save settings you like as a named preset.</li>
+  <li>Tap the export button to save the image to Photos or share it.</li>
+</ol>
+
+<h2>What the Knobs Do</h2>
+<ul>
+  <li><strong>BRIGHT</strong> — Overall brightness.</li>
+  <li><strong>CONTRAST</strong> — Difference between light and dark.</li>
+  <li><strong>FOCUS</strong> — Sharpness; lower it to let the picture bleed.</li>
+  <li><strong>SCAN</strong> — Strength of the scanlines.</li>
+  <li><strong>BLOOM</strong> — How much bright areas glow outward.</li>
+  <li><strong>CONVERG</strong> — Convergence error; offsets the red and blue channels.</li>
+  <li><strong>NOISE</strong> — Grain.</li>
+  <li><strong>V-HOLD</strong> — Vertical hold; creates rolling instability.</li>
+  <li><strong>CURVE</strong> — Curvature of the tube face.</li>
+</ul>
+
+<h2>FAQ</h2>
+<dl>
+  <dt>What is the DEGAUSS button for?</dt>
+  <dd>Just like a real CRT, it shakes the image once and resets the convergence (CONVERG) offset.
+      Use it to recover after pushing the color separation too far.</dd>
+
+  <dt>Pressing POWER blanks the screen. Is it broken?</dt>
+  <dd>No. As on a real tube, the image collapses to a point in the center and disappears.
+      Press it again to bring it back.</dd>
+
+  <dt>I see color bars before choosing a photo.</dt>
+  <dd>That is the NO SIGNAL state. Choose a photo and the picture appears.</dd>
+
+  <dt>Where do exported images go?</dt>
+  <dd>They are saved to your device's Photos app. The add-to-photos permission is used only at that moment.</dd>
+
+  <dt>Are my photos uploaded anywhere?</dt>
+  <dd>No. The app has no networking capability; all processing is on-device.
+      See the <a href="./privacy.html">Privacy Policy</a> for details.</dd>
+
+  <dt>How do I change the language or appearance?</dt>
+  <dd>Open Settings (the rightmost button) to switch language (System / 日本語 / English)
+      and appearance mode.</dd>
+
+  <dt>My saved presets are gone.</dt>
+  <dd>Presets are stored only on your device, so deleting the app erases them permanently.
+      They do not transfer to a new device.</dd>
+
+  <dt>Are there ads or in-app purchases?</dt>
+  <dd>No. The app is free, with no ads and no in-app purchases.</dd>
+</dl>
+
+<h2>Contact</h2>
+<p>Please send bug reports and requests to
+<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>.
+Including your iPhone model and iOS version is helpful.</p>
+</div>
+
+<footer>© 2026 Seiru Oba</footer>
+
+</body>
+</html>
