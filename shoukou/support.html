@@ -1,1 +1,181 @@
-<h1>shoukou Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shoukou サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #12161a;
+    background: #e6e8ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #eceff2; background: #12161a; }
+    a { color: #e8a33d; }
+    hr { border-color: #1d242b; }
+    .meta { color: #8b949d; }
+    dt { color: #e8a33d; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; border-bottom: 1px solid rgba(232,163,61,.45); padding-bottom: .3rem; }
+  .meta { color: #5f6a73; font-size: .9rem; margin-top: 0; }
+  a { color: #a4741f; }
+  hr { border: 0; border-top: 1px solid #c3c8cd; margin: 3rem 0; }
+  ul, ol { padding-left: 1.3rem; }
+  dt { font-weight: 600; margin-top: 1.25rem; color: #a4741f; }
+  dd { margin-left: 0; }
+</style>
+</head>
+<body>
+
+<h1>Shoukou（昇降）サポート</h1>
+<p class="meta">最終更新日：2026年8月1日</p>
+
+<p>
+Shoukou は、ビルのエレベーター群管理装置になったつもりで、乗り場からの呼びをどのかごに割り当てるかを決め、
+待ち時間を捌く一人用のシミュレーションアプリです。完全にオフラインで動作し、アカウント登録は必要ありません。
+</p>
+
+<h2>使いかた</h2>
+<ol>
+  <li>物件（ビル）を選びます。最初は小さなビルから始まり、走り切ると次の物件が解禁されます。</li>
+  <li>乗り場に呼びが点きます。上向き（▲）は上へ行きたい人、下向き（▼）は下へ行きたい人です。</li>
+  <li>呼びを、担当させたい<strong>かご</strong>にドラッグするかタップして割り当てます。
+      割り当てられたかごが、そのフロアへ向かいます。</li>
+  <li><strong>かごを直接運転することはできません。</strong>
+      あなたが決めるのは「どの呼びをどのかごに任せるか」だけです。ここが本アプリの中心です。</li>
+  <li>速度は ×1 / ×2 / ×4 と一時停止から選べます。迷ったら止めて考えて構いません。</li>
+  <li>終わると講評が出ます。待ち時間の中央値（p50）と90パーセンタイル（p90）、
+      そして同じ乗客を LOOK / RSR に捌かせた場合の成績と比べられます。</li>
+</ol>
+
+<h2>よくある質問</h2>
+<dl>
+  <dt>p50 と p90 は何ですか。</dt>
+  <dd>待ち時間の中央値と、90パーセンタイル（下から数えて90%目）の値です。
+      平均だけを見ると「ほとんどの人は早く乗れているが、一部が非常に長く待っている」状態を見落とします。
+      実際のビルの評判はその「一部」で決まるため、本アプリでは p90 を主要な指標にしています。</dd>
+
+  <dt>LOOK と RSR とは何ですか。</dt>
+  <dd>エレベーターの割当方式として一般に知られている考え方です。
+      LOOK は進行方向にある呼びを拾いながら端まで行き、折り返す方式。
+      RSR（相対応答）は、各かごが応答するのにかかる見込み時間などを点数化して、
+      最も点の良いかごに割り当てる方式です。手引きの項目で図解しています。
+      いずれも特定メーカーの製品を表すものではありません。</dd>
+
+  <dt>「去った」とは何ですか。</dt>
+  <dd>待ちきれずに諦めてしまった乗客の数です。ここが増えている場合は、
+      どこかのフロアの呼びを長く放置している可能性があります。</dd>
+
+  <dt>かごを直接動かせないのはなぜですか。</dt>
+  <dd>本アプリが再現しているのは、かご1台の運転ではなく<strong>群管理</strong>（複数台をまとめて捌く仕事）だからです。
+      「なぜエレベーターは来ないのか」という問いに答えるには、割当の判断こそが本体になります。</dd>
+
+  <dt>記録を消したいのですが。</dt>
+  <dd>設定画面の「記録をすべて消す」で、保存された成績と解禁状況をすべて消去できます。
+      アプリをアンインストールした場合も同様にすべて削除されます。</dd>
+
+  <dt>表示を明るく（暗く）したい／英語にしたい。</dt>
+  <dd>設定画面から、外観（ライト／ダーク／システムに従う）と言語（システム／日本語／English）を切り替えられます。</dd>
+
+  <dt>インターネットに接続できない場所でも使えますか。</dt>
+  <dd>はい。本アプリは完全にオフラインで動作します。通信は一切行いません。</dd>
+
+  <dt>広告やアプリ内課金はありますか。</dt>
+  <dd>ありません。本アプリは無料で、広告・アプリ内課金・トラッキングのいずれも含みません。</dd>
+</dl>
+
+<h2>お問い合わせ</h2>
+<p>
+不具合のご報告、ご要望、ご質問は以下までお願いします。<br>
+メール：<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a><br>
+プライバシーポリシー：<a href="./privacy.html">https://lapistellar.github.io/app-legal/shoukou/privacy.html</a>
+</p>
+<p>
+不具合のご報告の際は、<strong>お使いの iPhone の機種</strong>、<strong>iOS のバージョン</strong>、
+<strong>どの物件のどの場面で起きたか</strong>を添えていただけると、原因の特定が早くなります。
+</p>
+
+<hr>
+
+<h1 id="en">Shoukou — Support</h1>
+<p class="meta">Last updated: August 1, 2026</p>
+
+<p>
+Shoukou is a single-player simulation in which you act as a building's elevator group controller:
+you decide which car answers each hall call, and you live with the waiting times that result.
+It works entirely offline and requires no account.
+</p>
+
+<h2>Getting Started</h2>
+<ol>
+  <li>Pick a building. You start with small ones; finishing a run unlocks the next building.</li>
+  <li>Hall calls light up on each floor. An up arrow (▲) means someone wants to go up,
+      a down arrow (▼) means they want to go down.</li>
+  <li>Assign a call by dragging it onto the <strong>car</strong> you want to handle it, or by tapping.
+      The assigned car then heads for that floor.</li>
+  <li><strong>You cannot drive the cars directly.</strong> The only thing you decide is which call
+      goes to which car — that is the heart of the app.</li>
+  <li>Speed can be set to ×1, ×2, ×4, or paused. Feel free to stop and think.</li>
+  <li>At the end you get a result screen: your median (p50) and 90th-percentile (p90) waiting times,
+      compared against what LOOK and RSR would have achieved with the same passengers.</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+<dl>
+  <dt>What are p50 and p90?</dt>
+  <dd>The median waiting time and the 90th-percentile waiting time.
+      Looking only at the average hides the case where most people board quickly but a few wait a very
+      long time — and it is those few who decide a building's reputation. That is why p90 is the
+      headline number here.</dd>
+
+  <dt>What are LOOK and RSR?</dt>
+  <dd>Two well-known ways of assigning elevator calls. LOOK sweeps to one end, picking up calls in the
+      direction of travel, then reverses. RSR (relative system response) scores each car — roughly, how
+      long it would take to respond — and gives the call to the best-scoring car. Both are explained
+      with diagrams in the handbook. Neither represents any particular manufacturer's product.</dd>
+
+  <dt>What does "Left" mean?</dt>
+  <dd>The number of passengers who gave up waiting. If this is climbing, some floor's calls are probably
+      being left unanswered for too long.</dd>
+
+  <dt>Why can't I drive the cars myself?</dt>
+  <dd>Because what this app reproduces is <strong>group control</strong> — managing several cars together —
+      not driving a single car. To answer "why isn't the elevator coming?", the assignment decision
+      is the whole story.</dd>
+
+  <dt>How do I erase my records?</dt>
+  <dd>Use "Erase all records" in Settings to remove all saved results and unlock progress.
+      Uninstalling the app removes everything as well.</dd>
+
+  <dt>Can I change the appearance or language?</dt>
+  <dd>Yes. Settings lets you choose the appearance (Light / Dark / System) and the language
+      (System / Japanese / English).</dd>
+
+  <dt>Does it work without an internet connection?</dt>
+  <dd>Yes. The app runs entirely offline and makes no network connections at all.</dd>
+
+  <dt>Are there ads or in-app purchases?</dt>
+  <dd>No. The app is free, with no advertising, no in-app purchases, and no tracking.</dd>
+</dl>
+
+<h2>Contact</h2>
+<p>
+For bug reports, requests, or questions, please get in touch:<br>
+Email: <a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a><br>
+Privacy policy: <a href="./privacy.html">https://lapistellar.github.io/app-legal/shoukou/privacy.html</a>
+</p>
+<p>
+When reporting a bug, please include your <strong>iPhone model</strong>, your <strong>iOS version</strong>,
+and <strong>which building and which moment</strong> the problem happened in — that makes it much
+faster to track down.
+</p>
+
+</body>
+</html>
