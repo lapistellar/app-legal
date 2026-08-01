@@ -1,1 +1,223 @@
-<h1>yobun Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yobun サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #221e1a;
+    background: #efe7d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5ddd0; background: #07070a; }
+    a { color: #c86a2e; }
+    hr { border-color: #1a1512; }
+    .meta { color: #6b6259; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; border-bottom: 1px solid rgba(200,106,46,.45); padding-bottom: .3rem; }
+  .meta { color: #6b6259; font-size: .9rem; margin-top: 0; }
+  a { color: #a4551f; }
+  hr { border: 0; border-top: 1px solid #cdc3b2; margin: 3rem 0; }
+  ol, ul { padding-left: 1.3rem; }
+  dt { font-weight: 600; margin-top: 1.1rem; }
+  dd { margin-left: 0; padding-left: 1.1rem; border-left: 2px solid rgba(200,106,46,.3); }
+</style>
+</head>
+<body>
+
+<h1>Yobun（夜文）サポート</h1>
+<p class="meta">最終更新日：2026年8月2日</p>
+
+<p>
+Yobun は、画面を光らせないまま、指で符号を書いて夜の思いつきを書き留めるノートアプリです。
+書いた符号は翌朝「読み下し」で文字にして読み、直せます。
+完全にオフラインで動作し、アカウント登録は必要ありません。
+</p>
+
+<h2>使いかた</h2>
+<ol>
+  <li>綴（一覧）から<strong>「夜帳をひらく」</strong>を押します。初回は書き方の説明が出ます。</li>
+  <li>夜帳は全面が真っ黒になり、画面の輝度も下がります。<strong>画面を見ずに書けます。</strong></li>
+  <li>1文字ぶんのマスに、<strong>点</strong>（隅か中央をタップ）と<strong>線</strong>（隅から隅へドラッグ）で符号を書きます。
+      書いた線は書いた瞬間だけ炭火色に灯り、すぐ消えます。</li>
+  <li>手を止めるとしばらくして<strong>その字が確定</strong>します。確定・改行・認識できなかったことは、
+      すべて<strong>触覚（振動）で返ります</strong>ので、画面を見る必要はありません。</li>
+  <li>画面の<strong>左右の縁を下から上へなぞると1字取り消し</strong>、<strong>上から下へなぞると夜帳を閉じます</strong>。</li>
+  <li>翌朝、綴から紙片を開くと<strong>「読み下し」</strong>になります。
+      機械が読めなかった字は朱色の枠で示されるので、タップして字を選び直せます。文章はそのまま編集もできます。</li>
+</ol>
+
+<h2>字を覚えるには</h2>
+<p>
+メニューの<strong>「字典」</strong>に全字形が一覧で載っています。かな（清音・濁音・半濁音・小書き・記号）と英字を切り替えられます。
+<strong>「手習い」</strong>では出題範囲を選んで練習でき、構造図を開けば「どの段がどの線か・どの行がどの点か」という
+組み立てのルールが見えます。79字を丸暗記する必要はありません。
+</p>
+
+<h2>よくある質問</h2>
+<dl>
+  <dt>画面が真っ暗で何も見えません。故障ですか。</dt>
+  <dd>いいえ、それが夜帳の正しい状態です。本アプリは「画面を見ずに書く」ためのものなので、
+      夜帳を開いている間は地を真っ黒にし、端末の輝度も下げます。
+      書いた線だけが一瞬光ります。明るくしたい場合は、設定の
+      「夜帳で画面を暗くする」をオフにしてください。</dd>
+
+  <dt>輝度が下がったまま戻りません。</dt>
+  <dd>輝度は夜帳を閉じたとき、およびアプリを背面に回したときに元の値へ戻る設計です。
+      戻らない場合はお手数ですが、コントロールセンターから手動で戻したうえで、
+      機種と iOS のバージョンを添えてご連絡ください。</dd>
+
+  <dt>書いたのに違う字になります。</dt>
+  <dd>点の位置（隅か中央か）と、線の始点・終点の隅が、想定とずれている可能性があります。
+      「手習い」で構造図を開いて確かめてみてください。
+      また、設定の「確定までの待ち時間」を長め（1.2秒）にすると、書き切る前に確定してしまうのを防げます。</dd>
+
+  <dt>確定が早すぎる／遅すぎます。</dt>
+  <dd>設定の「確定までの待ち時間」で 0.5秒 / 0.8秒 / 1.2秒 から選べます。</dd>
+
+  <dt>間違えた字を消したいです。</dt>
+  <dd>夜帳では、左右どちらかの縁を<strong>下から上へなぞる</strong>と直前の1字を取り消せます。
+      朝の「読み下し」でも、文章をそのまま編集できます。</dd>
+
+  <dt>記録を消したいのですが。</dt>
+  <dd>綴（一覧）で紙片を長押しし、「削除」を選んでください。
+      アプリをアンインストールした場合は、保存されたデータがすべて削除されます。</dd>
+
+  <dt>書いた内容はどこかに送られますか。</dt>
+  <dd>いいえ。本アプリは完全にオフラインで、通信を一切行いません。
+      書いた内容は端末内にのみ保存され、開発者が見ることはできません。
+      詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</dd>
+
+  <dt>表示を明るく（暗く）したい／英語にしたい。</dt>
+  <dd>設定画面から、外観（ライト／ダーク／システムに従う）と言語（システム／日本語／English）を切り替えられます。</dd>
+
+  <dt>触覚（振動）が返ってきません。</dt>
+  <dd>設定の「触覚で知らせる」がオフになっていないかご確認ください。
+      また、iOS の「設定 &gt; サウンドと触覚」でシステム側の触覚が無効になっている場合も返りません。</dd>
+
+  <dt>書き方の説明をもう一度見たいです。</dt>
+  <dd>設定の「書き方の説明を次回もう一度見る」をオンにすると、次に夜帳を開くときに再び表示されます。</dd>
+
+  <dt>広告やアプリ内課金はありますか。</dt>
+  <dd>ありません。本アプリは無料で、広告・アプリ内課金・トラッキングのいずれも含みません。</dd>
+</dl>
+
+<h2>お問い合わせ</h2>
+<p>
+不具合のご報告、ご要望、ご質問は以下までお願いします。<br>
+メール：<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a><br>
+プライバシーポリシー：<a href="./privacy.html">https://lapistellar.github.io/app-legal/yobun/privacy.html</a>
+</p>
+<p>
+不具合のご報告の際は、<strong>お使いの iPhone の機種</strong>、<strong>iOS のバージョン</strong>、
+<strong>どの画面でどう操作したときに起きたか</strong>を添えていただけると、原因の特定が早くなります。
+なお、<strong>書かれた内容そのものを送っていただく必要はありません</strong>。
+</p>
+
+<hr>
+
+<h1 id="en">Yobun — Support</h1>
+<p class="meta">Last updated: August 2, 2026</p>
+
+<p>
+Yobun is a notebook for writing in the dark: you trace glyphs with your finger while the screen stays
+black, and read them back as text the next morning.
+It works entirely offline and requires no account.
+</p>
+
+<h2>Getting Started</h2>
+<ol>
+  <li>From the Bindery, tap <strong>"Open the Night Slate."</strong> The first time, a short writing guide appears.</li>
+  <li>The Night Slate goes fully black and lowers your screen brightness.
+      <strong>You can write without looking.</strong></li>
+  <li>In the cell for one character, place <strong>dots</strong> (tap a corner or the centre) and
+      <strong>lines</strong> (drag corner to corner). Each mark glows ember for a moment, then fades.</li>
+  <li>Pause, and the character <strong>commits</strong>. Commits, line breaks, and unrecognised marks
+      are all reported through <strong>haptics</strong>, so you never need to look at the screen.</li>
+  <li>Drag an edge <strong>bottom-to-top to undo one character</strong>;
+      <strong>top-to-bottom to close</strong> the Night Slate.</li>
+  <li>In the morning, open a slip from the Bindery to get <strong>Reading</strong>.
+      Anything the recogniser could not resolve is boxed in vermilion — tap it to pick the right
+      character. You can also edit the text directly.</li>
+</ol>
+
+<h2>Learning the Glyphs</h2>
+<p>
+The <strong>Glyph Table</strong> lists every glyph, with tabs for kana (plain, voiced, semi-voiced,
+small kana, symbols) and Latin. <strong>Practice</strong> lets you drill a chosen scope, and opening the
+diagram reveals the construction rule — which row is which line, which column is which dot.
+You do not have to memorise 79 glyphs one by one.
+</p>
+
+<h2>Frequently Asked Questions</h2>
+<dl>
+  <dt>The screen is completely black. Is it broken?</dt>
+  <dd>No — that is the Night Slate working as intended. The whole point is writing without looking, so
+      the App blacks out the screen and lowers the device brightness while it is open. Only your marks
+      glow, briefly. If you would rather it stayed bright, turn off "Dim the screen in the Night Slate"
+      in Settings.</dd>
+
+  <dt>My brightness didn't come back.</dt>
+  <dd>Brightness is restored when you close the Night Slate and when the App goes to the background.
+      If it does not, please restore it from Control Centre and let us know your device model and
+      iOS version.</dd>
+
+  <dt>I write a glyph and get the wrong character.</dt>
+  <dd>The dot position (corner vs. centre) or the corners your line starts and ends at may be slightly
+      off. Open the diagram in Practice to check. Setting "Confirm delay" to 1.2 s also helps if
+      characters are committing before you finish drawing.</dd>
+
+  <dt>Characters commit too quickly / too slowly.</dt>
+  <dd>Settings lets you choose a confirm delay of 0.5 s, 0.8 s, or 1.2 s.</dd>
+
+  <dt>How do I erase a character I got wrong?</dt>
+  <dd>On the Night Slate, drag either edge <strong>bottom-to-top</strong> to undo the last character.
+      You can also just edit the text later in Reading.</dd>
+
+  <dt>How do I delete an entry?</dt>
+  <dd>Long-press its slip in the Bindery and choose Delete.
+      Uninstalling the app removes all stored data.</dd>
+
+  <dt>Is anything I write sent anywhere?</dt>
+  <dd>No. The App is entirely offline and makes no network connections. What you write is stored only
+      on your device, and the developer cannot see it. See the
+      <a href="./privacy.html">privacy policy</a> for details.</dd>
+
+  <dt>Can I change the appearance or language?</dt>
+  <dd>Yes. Settings lets you choose the appearance (Light / Dark / System) and the language
+      (System / Japanese / English).</dd>
+
+  <dt>I'm not getting any haptic feedback.</dt>
+  <dd>Check that "Haptic feedback" is on in Settings. Haptics will also be silent if system haptics are
+      disabled under iOS Settings &gt; Sounds &amp; Haptics.</dd>
+
+  <dt>Can I see the writing guide again?</dt>
+  <dd>Turn on "Show writing guide again next time" in Settings, and it will reappear the next time you
+      open the Night Slate.</dd>
+
+  <dt>Are there ads or in-app purchases?</dt>
+  <dd>No. The app is free, with no advertising, no in-app purchases, and no tracking.</dd>
+</dl>
+
+<h2>Contact</h2>
+<p>
+For bug reports, requests, or questions, please get in touch:<br>
+Email: <a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a><br>
+Privacy policy: <a href="./privacy.html">https://lapistellar.github.io/app-legal/yobun/privacy.html</a>
+</p>
+<p>
+When reporting a bug, please include your <strong>iPhone model</strong>, your <strong>iOS version</strong>,
+and <strong>what you were doing on which screen</strong> — that makes it much faster to track down.
+You do <strong>not</strong> need to send us anything you wrote.
+</p>
+
+</body>
+</html>
