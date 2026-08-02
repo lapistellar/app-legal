@@ -1,1 +1,255 @@
-<h1>monkiri Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monkiri サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #221e1a;
+    background: #efe7d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5ddd0; background: #14161f; }
+    a { color: #d4643f; }
+    hr { border-color: #232634; }
+    .meta { color: #6b6259; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; border-bottom: 1px solid rgba(212,100,63,.45); padding-bottom: .3rem; }
+  .meta { color: #6b6259; font-size: .9rem; margin-top: 0; }
+  a { color: #a4551f; }
+  hr { border: 0; border-top: 1px solid #cdc3b2; margin: 3rem 0; }
+  ul, ol { padding-left: 1.3rem; }
+  dt { font-weight: 600; margin-top: 1.1rem; }
+  dd { margin-left: 0; padding-left: 1.1rem; border-left: 2px solid rgba(212,100,63,.3); }
+</style>
+</head>
+<body>
+
+<h1>Monkiri（紋切）サポート</h1>
+<p class="meta">最終更新日：2026年8月3日</p>
+
+<p>
+Monkiri は、画面上の紙を折って、切って、開くことで対称の紋を作る紙遊びのアプリです。
+江戸から続く「紋切り型」と同じで、<strong>切っている間は結果が見えません</strong>。開いて初めて分かります。
+完全にオフラインで動作し、アカウント登録は必要ありません。無料です。
+</p>
+
+<h2>使いかた</h2>
+<ol>
+  <li>アプリを開くと<strong>切り台</strong>が出ます。畳んだ紙が一枚の扇形として置かれています。</li>
+  <li>上部で<strong>折り数</strong>（三・四・五・六・八）と、<strong>鏡映／回転</strong>を選びます。
+      鏡映は左右対称の折り、回転はぐるりと回した折りです。開いたときの紋の姿が変わります。</li>
+  <li>下部の道具から<strong>鋏</strong>か<strong>刳り</strong>を選びます。
+      <ul>
+        <li><strong>鋏</strong> … 紙の<strong>縁から縁へ</strong>なぞって切り落とします。途中で止めると切れません。</li>
+        <li><strong>刳り</strong> … 紙の内側をタップして穴をあけます。</li>
+      </ul>
+  </li>
+  <li>切り間違えたら<strong>「戻す」</strong>で一手ずつ取り消せます。全部やり直すときは<strong>「まっさら」</strong>です。</li>
+  <li>切り終えたら<strong>「開く」</strong>を押します。紙が順に開いていき、紋が現れます。</li>
+  <li>気に入ったら<strong>「綴じる」</strong>で名前を付けて紋帖に残せます。
+      <strong>「書き出す」</strong>で画像として他のアプリへ渡すこともできます。</li>
+</ol>
+
+<h2>手本から始める</h2>
+<p>
+何を切ればいいか迷ったら、上部の<strong>「手本」</strong>を開いてください。
+桜・雪輪・麻の葉・亀甲・七宝・巴 の6種が入っています。
+手本は<strong>切り線として切り台に読み込まれる</strong>ので、そこから自分で切り足したり、
+折り数を変えたりして自由に崩せます。まず開いてみて、仕組みを掴むのが早道です。
+</p>
+
+<h2>よくある質問</h2>
+<dl>
+  <dt>切っている途中で、開いたらどうなるか見せてほしいです。</dt>
+  <dd>これは仕様です。本物の紋切りと同じく、<strong>開くまで結果が分からない</strong>ことが
+      このアプリの楽しみの中心なので、切り台には対称のプレビューを出していません。
+      迷ったら「開く」で確かめて、「切り台へ」で戻ってください。切り線は残っています。</dd>
+
+  <dt>「まず紙を切ってください」と出て「開く」が押せません。</dt>
+  <dd>まだ一度も切れていない状態です。鋏は<strong>紙の縁から縁へ</strong>通し切る必要があります。
+      縁の内側で始めたり途中で止めたりすると切り落とせません。
+      内側だけを抜きたいときは<strong>刳り</strong>をお使いください。</dd>
+
+  <dt>「縁から縁へ切ってください」と出ます。</dt>
+  <dd>なぞった線が紙の外まで抜けていません。指を紙の縁の外側まで送り切ってから離してください。</dd>
+
+  <dt>「小さすぎます」と出ます。</dt>
+  <dd>切り落とされる部分が細かすぎて、紙として成立しません。もう少し大きく切ってください。</dd>
+
+  <dt>「これ以上は切れません」と出ます。</dt>
+  <dd>一枚に入れられる切り線の数の上限に達しています。「戻す」で減らすか、「まっさら」からやり直してください。</dd>
+
+  <dt>開いたら紋が真っ白（または全部落ちてしまう）になります。</dt>
+  <dd>切り方によっては起こります。畳んだ紙は開くと折り数の2倍に増えるので、
+      扇形の<strong>中心（とがった側）</strong>を切り落とすと全体がばらけ、
+      逆に縁だけを浅く切ると変化が出ません。中心を残しつつ、縁と中ほどの両方に手を入れると紋らしくなります。
+      手本を読み込んで、どこがどう効いているか見比べてみてください。</dd>
+
+  <dt>折り数を変えたら切り線が消えました。</dt>
+  <dd>折り数や鏡映／回転を変えると紙の形そのものが変わるため、切り線は引き継げません。
+      変更前に確認が出ますので、残したい紋は先に「開く」→「綴じる」で紋帖に入れておいてください。</dd>
+
+  <dt>作った紋を消したいです。</dt>
+  <dd>紋帖で紋を開き、「捨てる」を選んでください。
+      アプリをアンインストールした場合は、保存されたデータがすべて削除されます。</dd>
+
+  <dt>書き出した画像はどこに入りますか。</dt>
+  <dd>「書き出す」は iOS 標準の共有シートを開きます。写真に保存する、メッセージで送る、
+      ファイルに入れるなど、送り先はご自身で選べます。
+      このため本アプリは写真ライブラリへのアクセス権限を要求しません。</dd>
+
+  <dt>作った紋はどこかに送られますか。</dt>
+  <dd>いいえ。本アプリは完全にオフラインで、通信を一切行いません。
+      作った紋は端末内にのみ保存され、開発者が見ることはできません。
+      詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</dd>
+
+  <dt>表示を明るく（暗く）したい／英語にしたい。</dt>
+  <dd>設定画面から、外観（ライト／ダーク／システムに従う）と言語（システム／日本語／English）を切り替えられます。</dd>
+
+  <dt>触覚（振動）が返ってきません。</dt>
+  <dd>設定の「触覚で知らせる」がオフになっていないかご確認ください。
+      また、iOS の「設定 &gt; サウンドと触覚」でシステム側の触覚が無効になっている場合も返りません。</dd>
+
+  <dt>紋切りとは何ですか。</dt>
+  <dd>設定の<strong>「紋切について」</strong>に簡単な説明があります。
+      江戸期に広まった、畳んだ紙を切って開き対称の紋を作る紙遊びです。</dd>
+
+  <dt>広告やアプリ内課金はありますか。</dt>
+  <dd>ありません。本アプリは無料で、広告・アプリ内課金・トラッキングのいずれも含みません。</dd>
+</dl>
+
+<h2>お問い合わせ</h2>
+<p>
+不具合のご報告、ご要望、ご質問は以下までお願いします。<br>
+メール：<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a><br>
+プライバシーポリシー：<a href="./privacy.html">https://lapistellar.github.io/app-legal/monkiri/privacy.html</a>
+</p>
+<p>
+不具合のご報告の際は、<strong>お使いの iPhone の機種</strong>、<strong>iOS のバージョン</strong>、
+<strong>折り数と鏡映／回転の設定</strong>、<strong>どの画面でどう操作したときに起きたか</strong>を
+添えていただけると、原因の特定が早くなります。
+</p>
+
+<hr>
+
+<h1 id="en">Monkiri — Support</h1>
+<p class="meta">Last updated: August 3, 2026</p>
+
+<p>
+Monkiri is a paper-play app: you fold a sheet on screen, cut into it, and open it up to reveal a
+symmetrical crest. Like the Edo-period craft it comes from, <strong>you cannot see the result while
+you cut</strong> — only when you unfold.
+It works entirely offline, requires no account, and is free.
+</p>
+
+<h2>Getting Started</h2>
+<ol>
+  <li>The app opens on the <strong>Cutting Table</strong>, where the folded paper sits as a single wedge.</li>
+  <li>At the top, choose the <strong>fold count</strong> (3, 4, 5, 6, or 8) and
+      <strong>Mirrored / Rotational</strong> symmetry. These change how the crest looks when opened.</li>
+  <li>Pick a tool at the bottom:
+      <ul>
+        <li><strong>Scissors</strong> — drag <strong>from one edge to another</strong> to cut a piece away.
+            A stroke that stops partway will not cut.</li>
+        <li><strong>Punch</strong> — tap inside the paper to make a hole.</li>
+      </ul>
+  </li>
+  <li><strong>Undo</strong> removes one cut at a time; <strong>Clear</strong> starts a fresh sheet.</li>
+  <li>When you are done, press <strong>Unfold</strong>. The paper opens in sequence and the crest appears.</li>
+  <li>Press <strong>Bind</strong> to name it and keep it in the Crest Book, or <strong>Export</strong>
+      to hand it to another app as an image.</li>
+</ol>
+
+<h2>Start From a Pattern</h2>
+<p>
+If you are not sure what to cut, open <strong>Patterns</strong> at the top.
+Six are included: Cherry, Snow Ring, Hemp Leaf, Tortoiseshell, Seven Treasures, and Tomoe.
+A pattern <strong>loads as cuts on the table</strong>, so you can add to it, change the fold count,
+and take it wherever you like. Opening one is the quickest way to see how the folding works.
+</p>
+
+<h2>Frequently Asked Questions</h2>
+<dl>
+  <dt>Can you show me a preview of the crest while I cut?</dt>
+  <dd>That is intentional. As with real monkiri, <strong>not knowing until you unfold</strong> is the
+      point of the app, so the Cutting Table shows no symmetry preview.
+      Press Unfold to check, then Back to Table — your cuts are still there.</dd>
+
+  <dt>It says "Cut the paper first" and Unfold is disabled.</dt>
+  <dd>Nothing has been cut yet. Scissors must travel <strong>from one edge of the paper to another</strong>;
+      a stroke that starts inside or stops partway removes nothing.
+      To take out an interior shape, use the <strong>Punch</strong> tool.</dd>
+
+  <dt>It says "Cut from edge to edge."</dt>
+  <dd>Your stroke did not leave the paper. Carry your finger past the far edge before lifting it.</dd>
+
+  <dt>It says "Too small."</dt>
+  <dd>The piece being cut away is too fine to hold together. Try a larger cut.</dd>
+
+  <dt>It says "No more cuts."</dt>
+  <dd>You have reached the limit of cuts on one sheet. Use Undo, or Clear to start over.</dd>
+
+  <dt>My crest comes out blank, or falls apart completely.</dt>
+  <dd>This depends on where you cut. A folded sheet opens into twice the fold count, so cutting away
+      the <strong>pointed centre</strong> of the wedge makes the whole crest fall apart, while shallow
+      cuts along the outer edge barely change anything. Keep the centre and work both the rim and the
+      middle. Loading a pattern and comparing is the fastest way to get a feel for it.</dd>
+
+  <dt>My cuts disappeared when I changed the fold count.</dt>
+  <dd>Changing the fold count or the symmetry changes the shape of the paper itself, so cuts cannot
+      carry over. You will be asked to confirm first — Unfold and Bind anything you want to keep
+      before changing.</dd>
+
+  <dt>How do I delete a crest?</dt>
+  <dd>Open it from the Crest Book and choose Discard.
+      Uninstalling the app removes all stored data.</dd>
+
+  <dt>Where does an exported image go?</dt>
+  <dd>Export opens the standard iOS share sheet, and you choose the destination — save to Photos,
+      send in Messages, put it in Files, and so on. Because of this, the app never asks for photo
+      library access.</dd>
+
+  <dt>Are my crests sent anywhere?</dt>
+  <dd>No. The app is entirely offline and makes no network connections. Your crests are stored only on
+      your device, and the developer cannot see them. See the
+      <a href="./privacy.html">privacy policy</a> for details.</dd>
+
+  <dt>Can I change the appearance or language?</dt>
+  <dd>Yes. Settings lets you choose the appearance (Light / Dark / System) and the language
+      (System / Japanese / English).</dd>
+
+  <dt>I'm not getting any haptic feedback.</dt>
+  <dd>Check that "Haptic feedback" is on in Settings. Haptics will also be silent if system haptics are
+      disabled under iOS Settings &gt; Sounds &amp; Haptics.</dd>
+
+  <dt>What is monkiri?</dt>
+  <dd>There is a short explanation under <strong>About Monkiri</strong> in Settings. It is a paper craft
+      popularised in the Edo period: fold a sheet, cut it, and open it into a symmetrical crest.</dd>
+
+  <dt>Are there ads or in-app purchases?</dt>
+  <dd>No. The app is free, with no advertising, no in-app purchases, and no tracking.</dd>
+</dl>
+
+<h2>Contact</h2>
+<p>
+Bug reports, requests, and questions are welcome:<br>
+Email: <a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a><br>
+Privacy policy: <a href="./privacy.html">https://lapistellar.github.io/app-legal/monkiri/privacy.html</a>
+</p>
+<p>
+For bug reports, please include your <strong>iPhone model</strong>, <strong>iOS version</strong>,
+the <strong>fold count and symmetry setting</strong>, and <strong>what you were doing when it
+happened</strong> — it makes the cause much easier to find.
+</p>
+
+</body>
+</html>
