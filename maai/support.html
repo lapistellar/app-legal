@@ -1,1 +1,248 @@
-<h1>maai Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maai（間合） サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #16180f;
+    background: #e6e3d5;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ded9c8; background: #0f1210; }
+    a { color: #e0714a; }
+  }
+  h1 { font-size: 1.5rem; letter-spacing: .02em; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; }
+  hr { border: none; border-top: 1px solid #8884; margin: 3.5rem 0; }
+  a { color: #9b4426; }
+  .muted { opacity: .7; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Maai（間合） サポート</h1>
+<p class="muted">最終更新日：2026年8月5日</p>
+
+<p>
+Maai（間合）は、「このレンズなら、何メートル下がればいいか」を返す撮影前の画角盤です。
+焦点距離はすべて35mm換算に揃えて計算します。完全にオフラインで動作します。
+</p>
+
+<h2>使いかた</h2>
+
+<h3>見立て</h3>
+<p>
+センサー・アスペクト比・場面・被写体・収まり（フレームに占める割合）を選び、
+真鍮の環で焦点距離と撮影距離を合わせます。
+上のプレビューには、その画角で背景がどう写るかが出ます。
+読み値には画角（横・縦・対角）、その距離で写る範囲、そして「間合い」——
+選んだ収まりにするために必要な距離と、いまの設定との差が並びます。
+</p>
+
+<h3>間合い</h3>
+<p>
+上段の「何メートル下がるか」は、被写体と収まりと焦点距離から、必要な撮影距離を返します。
+下段の「この距離なら何ミリか」は逆向きで、下がれる距離が決まっているとき——
+たとえば部屋の奥行きが2.7mしかないとき——に、何ミリのレンズなら収まるかを返します。
+どちらも「この値で見立てる」で見立ての画面に送れます。
+</p>
+
+<h3>見くらべ</h3>
+<p>
+2つの焦点距離を上下（または左右）に並べます。
+<strong>被写体の大きさは、どちらの枠でも同じです。</strong>
+収まりを保つように撮影距離のほうを変えているので、変わるのは背景だけ——
+これが「背景の倍率 ×」に出ている圧縮効果です。広角では背景が遠ざかり、望遠では背景が詰まります。
+</p>
+
+<h3>控</h3>
+<p>
+気に入った見立ては「控に入れる」で残せます。
+背景のサムネイル・焦点距離・撮影距離・センサー・アスペクト比・日付が並びます。
+</p>
+
+<h3>設定</h3>
+<p>
+外観（システム / ライト / ダーク）と言語（システム / 日本語 / English）、
+既定のセンサーとアスペクト比を切り替えられます。
+</p>
+
+<h2>よくある質問</h2>
+
+<h3>焦点距離を変えても、人の大きさが変わりません。故障ですか？</h3>
+<p>
+<strong>いいえ、そのとおりの作りです。</strong>
+「見くらべ」は、収まりを一定に保ったまま焦点距離だけを変えたときに
+<strong>背景だけがどう変わるか</strong>を見るための画面です。
+被写体を同じ大きさに収めるために撮影距離を変えているので、被写体の大きさは変わりません。
+背景が詰まって見えるのは、望遠にしたからではなく、離れて撮ったからです。
+</p>
+
+<h3>カメラは使わないのですか？</h3>
+<p>
+使いません。カメラや写真ライブラリへのアクセスは求めません。
+画面の景色はアプリに収録された作画で、撮影距離の感覚をつかむためのものです。
+</p>
+
+<h3>手持ちのレンズが一覧にありません</h3>
+<p>
+真鍮の環は10mm〜300mm（35mm換算）まで連続して動きますので、一覧にない焦点距離も直接合わせられます。
+チップは、よく使う値への近道として並べてあります。
+</p>
+
+<h3>センサーの「35mm換算で入力」とは何ですか？</h3>
+<p>
+すでに35mm換算の値がわかっているとき（スマートフォンの「24mm相当」表記など）に、
+そのまま入力するための設定です。フルサイズ・APS-C・APS-C（1.6×）・マイクロフォーサーズを選ぶと、
+入力した実焦点距離をアプリ側で35mm換算に直します。
+</p>
+
+<h3>「プレート外」と朱色で出るのはなぜですか？</h3>
+<p>
+その画角が、収録している背景の作画より広いことを示しています。
+数値の計算は続いていますが、背景の見えかたはそれ以上広げて描けない、という合図です。
+</p>
+
+<h3>数値はどのくらい正確ですか？</h3>
+<p>
+幾何計算上の目安としてお使いください。
+実際のレンズには公称値との差、近接時の画角の変化、ディストーション補正やクロップなど、
+計算に含まれない要素があります。現場では必ずファインダーや背面モニタで最終確認してください。
+また、立ち位置を決めるときは、周囲の交通・足場・立ち入りの可否といった現場の安全と規則を優先してください。
+</p>
+
+<h3>データはどこに保存されますか？</h3>
+<p>
+控と設定は、利用者の端末内にのみ保存されます。外部に送信されることはありません。
+アプリを削除すると、これらのデータも端末から削除されます。
+詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。
+</p>
+
+<h2>お問い合わせ</h2>
+<p>
+ご意見・不具合のご報告はこちらへお願いします。<br>
+<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>
+</p>
+
+<hr>
+
+<h1>Maai Support</h1>
+<p class="muted">Last updated: August 5, 2026</p>
+
+<p>
+Maai is a pre-shot angle-of-view dial that tells you how many metres to step back for a given lens.
+All focal lengths are normalised to their 35mm equivalents. The app works entirely offline.
+</p>
+
+<h2>How to Use</h2>
+
+<h3>Frame</h3>
+<p>
+Choose a sensor, aspect ratio, scene, subject, and fill (how much of the frame the subject occupies),
+then set focal length and shooting distance with the brass dials.
+The preview shows how the background falls at that angle of view.
+The readout gives the angle of view (horizontal, vertical, diagonal), the coverage at that distance,
+and the "reach" — the distance needed for the fill you chose, and how far that is from where you are now.
+</p>
+
+<h3>Reach</h3>
+<p>
+The upper half, "how many metres back", takes your subject, fill, and focal length and returns the
+shooting distance you need.
+The lower half, "what focal length at this distance", runs the other way — for when the distance is
+fixed, say a room only 2.7m deep, and you need to know which lens will fit.
+Either result can be sent to the Frame screen with "use this value".
+</p>
+
+<h3>Compare</h3>
+<p>
+Place two focal lengths side by side (or one above the other).
+<strong>The subject is the same size in both frames.</strong>
+The shooting distance is adjusted to hold the fill constant, so the only thing that changes is the
+background — that is the compression shown as "background magnification ×".
+Wide angles push the background away; telephoto pulls it in.
+</p>
+
+<h3>Notes</h3>
+<p>
+Keep a setup you like with "add to notes".
+Each entry lists a thumbnail of the background, focal length, shooting distance, sensor, aspect
+ratio, and date.
+</p>
+
+<h3>Settings</h3>
+<p>
+Switch appearance (System / Light / Dark), language (System / Japanese / English), and your default
+sensor and aspect ratio.
+</p>
+
+<h2>FAQ</h2>
+
+<h3>The person doesn't change size when I change focal length. Is it broken?</h3>
+<p>
+<strong>No — that is exactly the point.</strong>
+Compare exists to show what happens to <strong>the background alone</strong> when you change focal
+length while holding the fill constant. The shooting distance moves to keep the subject the same
+size, so the subject's size does not change. The background looks compressed not because you went
+telephoto, but because you shot from further away.
+</p>
+
+<h3>Doesn't it use the camera?</h3>
+<p>
+No. It never requests camera or photo access. The scenery on screen is artwork bundled with the app,
+there to give you a feel for shooting distance.
+</p>
+
+<h3>My lens isn't in the list</h3>
+<p>
+The brass dial moves continuously from 10mm to 300mm (35mm equivalent), so you can set any focal
+length directly. The chips are just shortcuts to common values.
+</p>
+
+<h3>What does the "35mm equivalent" sensor option mean?</h3>
+<p>
+Use it when you already know the equivalent figure — for instance a phone that reports "24mm
+equivalent" — and want to enter it as is. Choosing Full Frame, APS-C, APS-C (1.6×), or Micro Four
+Thirds instead lets you enter the actual focal length, and the app converts it for you.
+</p>
+
+<h3>Why does it say "beyond the plate" in vermilion?</h3>
+<p>
+It means the angle of view is wider than the bundled artwork can show.
+The numbers are still being calculated; it is simply a signal that the background cannot be drawn
+any wider.
+</p>
+
+<h3>How accurate are the numbers?</h3>
+<p>
+Treat them as geometric approximations. Real lenses differ from their nominal figures, change their
+angle of view at close focus, and may apply distortion correction or cropping — none of which is
+part of the calculation. On location, always confirm through your viewfinder or rear screen.
+When choosing where to stand, put the safety and rules of the location — traffic, footing, and
+whether access is permitted — first.
+</p>
+
+<h3>Where is my data stored?</h3>
+<p>
+Your notes and settings are stored only on your device and are never transmitted anywhere.
+Deleting the app also deletes them.
+See the <a href="./privacy.html">privacy policy</a> for details.
+</p>
+
+<h2>Contact</h2>
+<p>
+For feedback or bug reports:<br>
+<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>
+</p>
+
+</body>
+</html>
