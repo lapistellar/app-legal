@@ -1,1 +1,278 @@
-<h1>shinon Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shinon（芯温） サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #191512;
+    background: #efe7dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ded4c6; background: #14100e; }
+    a { color: #e0632a; }
+  }
+  h1 { font-size: 1.5rem; letter-spacing: .02em; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; }
+  hr { border: none; border-top: 1px solid #8884; margin: 3.5rem 0; }
+  a { color: #c0512a; }
+  .muted { opacity: .7; font-size: .9rem; }
+  .caution { border: 1px solid #c0512a; padding: 1rem 1.25rem; }
+</style>
+</head>
+<body>
+
+<h1>Shinon（芯温） サポート</h1>
+<p class="muted">最終更新日：2026年8月6日</p>
+
+<p>
+Shinon（芯温）は、食材の表面ではなく<strong>芯が何℃になったか</strong>で加熱と冷凍を見立てる盤です。
+完全にオフラインで動作し、利用許可を一切求めません。
+</p>
+
+<div class="caution">
+<strong>はじめにお読みください。</strong>
+本アプリが出すのは目安です。<strong>最終的な判断は必ず食品用温度計で芯温を実測して行ってください。</strong>
+本アプリの数値だけを根拠に「加熱が足りている」と判断しないでください。
+</div>
+
+<h2>使いかた</h2>
+
+<h3>献立盤</h3>
+<p>
+鶏もも肉・鶏むね肉・豚ロース・牛ステーキ・ひき肉（成形）・白身魚の切り身・青魚・サーモンの8品から選びます。
+各枡には既定の厚みが添えてあります。選ぶと「芯」の画面に移ります。
+下段の「控え」には、残しておいた見立てが並びます。
+</p>
+
+<h3>芯</h3>
+<p>
+この画面が本体です。中央の断面図は、外側が熱く芯が冷たい<strong>いまの温度分布</strong>そのもので、
+中央の細い線が芯の位置を示します。
+</p>
+<ul>
+  <li><strong>厚みを変える</strong>：断面図の上端または下端を掴んで縦にドラッグします。5mm ごとに手応えがあります。</li>
+  <li><strong>時間を動かす</strong>：下の「火の帯」を横にスクラブします。指を離すと、達温まで自動で進みます。</li>
+  <li><strong>条件を変える</strong>：環境（低温調理63°C／湯煎75°C／沸騰湯／蒸し／フライパン両面／オーブン180°C）、
+      開始温度（冷蔵から／常温から／半解凍から）、目標（食材ごとの帯）を選びます。</li>
+</ul>
+<p>
+右上に芯温、下段に経過時間と、目標までの残り時間が出ます。
+目標に達すると、芯の線に印が付き、表示が「到達」に変わります。
+</p>
+
+<h3>基準</h3>
+<p>
+「火通りの帯」で、レア〜ウェルダンの温度帯を確かめられます。帯のラベルを押すと、その温度が目標に入ります。
+その下に、厚生労働省・USDA の公的基準（温度と保持時間）と、低温調理の保持時間表が並びます。
+</p>
+
+<h3>冷やす</h3>
+<p>
+寄生虫は加熱でも冷凍でも不活化できます。冷凍で対処する場合の基準（−20°C で24時間以上など）を掲載しています。
+<strong>本アプリは冷凍については計算を行わず、基準の提示に徹しています。</strong>
+</p>
+
+<h3>設定</h3>
+<p>
+外観（システム / ライト / ダーク）、言語（システム / 日本語 / English）、温度単位（°C / °F）を切り替えられます。
+</p>
+
+<h2>よくある質問</h2>
+
+<h3>「この環境では芯は目標に届きません」と出ます</h3>
+<p>
+<strong>故障ではありません。</strong>環境の温度が目標温度以下のときに出る表示です。
+たとえば低温調理63°C で目標を75°C にすると、芯はどれだけ待っても63°C を超えられません。
+熱は温度差で伝わるので、芯温は環境温度に近づいていくだけで、それを超えることはないためです。
+環境の温度を上げるか、目標を下げてください。
+</p>
+
+<h3>低温調理で「63°C・要保持」と出るのはなぜですか</h3>
+<p>
+63°C 前後の温度帯では、芯がその温度に達しただけでは足りず、<strong>そこからさらに一定時間保つ</strong>ことで
+安全性が確保されるためです。必要な保持時間は「基準」画面の表をご覧ください。
+温度が低いほど長く（54°C なら112分）、高いほど短く（71°C なら即時）なります。
+</p>
+
+<h3>厚みを倍にしたら、時間が4倍になりました</h3>
+<p>
+<strong>それが正しい挙動です。</strong>熱が芯まで届くのにかかる時間は、厚みの<strong>2乗</strong>に比例します。
+25mm で15分だったものが、50mm では60分になります。
+「倍の厚さなら倍の時間」と考えると大きく足りなくなるので、この盤で確かめてください。
+</p>
+
+<h3>タイマーとして使えますか。通知は来ますか？</h3>
+<p>
+通知は送りません。本アプリは利用許可を一切求めない設計のため、通知の許可も求めていません。
+時間は、画面上で火の帯を操作している間と、指を離したあとの自動再生の間だけ進みます。
+アプリを閉じている間に計り続けるタイマーではありません。調理中の計時には別途タイマーをお使いください。
+</p>
+
+<h3>数値はどのくらい正確ですか</h3>
+<p>
+食材を<strong>平板として単純化した熱伝導計算</strong>による目安です。
+実際の食材は形も密度も一様ではなく、骨や脂の分布、鍋の中の対流、庫内温度のむら、表面の焦げなど、
+計算に含まれない要素が数多くあります。
+とくにフライパンやオーブンのような乾式加熱は、湯煎に比べて熱の伝わりかたのばらつきが大きくなります。
+必ず食品用温度計で実測して最終判断してください。
+</p>
+
+<h3>家庭の冷凍庫で寄生虫の基準を満たせますか</h3>
+<p>
+<strong>満たせないとお考えください。</strong>
+家庭用冷凍庫の庫内はおおむね −18°C で、基準の −20°C に届きません。扉の開閉でさらに上がります。
+「冷やす」画面にも同じ注意を掲げています。
+</p>
+
+<h3>データはどこに保存されますか</h3>
+<p>
+控えと設定は、利用者の端末内にのみ保存されます。外部に送信されることはありません。
+アプリを削除すると、これらのデータも端末から削除されます。
+詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。
+</p>
+
+<h2>お問い合わせ</h2>
+<p>
+ご意見・不具合のご報告はこちらへお願いします。<br>
+<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>
+</p>
+
+<hr>
+
+<h1>Shinon Support</h1>
+<p class="muted">Last updated: August 6, 2026</p>
+
+<p>
+Shinon is a dial for judging cooking and freezing by <strong>the temperature at the core</strong>,
+not at the surface. It works entirely offline and requests no permissions of any kind.
+</p>
+
+<div class="caution">
+<strong>Please read this first.</strong>
+What the app gives you is an approximation.
+<strong>Always make the final judgement by measuring the core temperature with a food
+thermometer.</strong> Never conclude that food is sufficiently cooked on the strength of the app's
+figures alone.
+</div>
+
+<h2>How to Use</h2>
+
+<h3>Board</h3>
+<p>
+Pick from eight cuts: chicken thigh, chicken breast, pork loin, beef steak, ground meat (formed),
+white fish fillet, oily fish, and salmon. Each tile carries a default thickness.
+Selecting one takes you to the Core screen.
+Setups you have kept appear below, under Notes.
+</p>
+
+<h3>Core</h3>
+<p>
+This is the heart of the app. The cross-section is the <strong>current temperature distribution</strong>
+itself — hot on the outside, cool at the centre — and the thin line through the middle marks the core.
+</p>
+<ul>
+  <li><strong>Change thickness</strong>: grab the top or bottom edge of the cross-section and drag
+      vertically. You get a tick of feedback every 5mm.</li>
+  <li><strong>Move through time</strong>: scrub the heat band below. Let go and it plays forward to
+      the moment the target is reached.</li>
+  <li><strong>Change conditions</strong>: environment (sous-vide 63°C / water bath 75°C / boiling water /
+      steam / pan, both sides / oven 180°C), starting temperature (from fridge / from room temperature /
+      from partially thawed), and target.</li>
+</ul>
+<p>
+The core temperature sits at the top right; elapsed time and time remaining to the target sit below.
+Once the target is reached, the core line takes a mark and the readout switches to "Reached".
+</p>
+
+<h3>Standards</h3>
+<p>
+The doneness band shows the range from rare to well done — tap a label to adopt that temperature as
+your target. Below it are the official standards from Japan's Ministry of Health, Labour and Welfare
+and the USDA (temperature and holding time), and a holding-time table for sous-vide cooking.
+</p>
+
+<h3>Chill</h3>
+<p>
+Parasites can be inactivated by heating or by freezing. This screen carries the standards for the
+freezing route (−20°C for 24 hours or more, and others).
+<strong>The app performs no calculation for freezing; it presents the standards only.</strong>
+</p>
+
+<h3>Settings</h3>
+<p>
+Switch appearance (System / Light / Dark), language (System / Japanese / English), and temperature
+unit (°C / °F).
+</p>
+
+<h2>FAQ</h2>
+
+<h3>It says "the core will not reach the target in this environment"</h3>
+<p>
+<strong>Nothing is broken.</strong> This appears when the environment is no hotter than your target.
+Set sous-vide at 63°C with a target of 75°C, for example, and the core can never pass 63°C no matter
+how long you wait: heat flows from a difference in temperature, so the core only approaches the
+surrounding temperature and never exceeds it. Raise the environment or lower the target.
+</p>
+
+<h3>Why does sous-vide show "63°C, hold required"?</h3>
+<p>
+Around 63°C it is not enough for the core to touch the temperature — it must <strong>stay</strong>
+there for a period before the food is safe. The required holding times are in the Standards screen:
+longer at lower temperatures (112 minutes at 54°C), shorter at higher ones (instant at 71°C).
+</p>
+
+<h3>I doubled the thickness and the time went up fourfold</h3>
+<p>
+<strong>That is correct.</strong> The time heat needs to reach the core scales with the
+<strong>square</strong> of the thickness. What took 15 minutes at 25mm takes 60 minutes at 50mm.
+Assuming "twice as thick, twice as long" leaves you badly short — which is what this dial is for.
+</p>
+
+<h3>Can I use it as a timer? Does it send notifications?</h3>
+<p>
+It sends no notifications. The app is built to request no permissions at all, so it never asks for
+notification permission either. Time advances only while you are scrubbing the heat band and during
+the playback after you let go. It is not a timer that keeps counting while the app is closed —
+please use a separate timer while cooking.
+</p>
+
+<h3>How accurate are the numbers?</h3>
+<p>
+They are approximations from a heat-conduction calculation that
+<strong>simplifies food into a flat slab</strong>. Real food is neither uniform in shape nor in
+density, and the distribution of bone and fat, convection in the pot, uneven oven temperatures, and
+surface browning all fall outside the calculation. Dry heat — a pan or an oven — varies considerably
+more than a water bath. Always confirm with a food thermometer before making the final call.
+</p>
+
+<h3>Can a household freezer meet the parasite standards?</h3>
+<p>
+<strong>Assume it cannot.</strong> A household freezer typically holds about −18°C, short of the
+−20°C in the standards, and opening the door pushes it higher still. The same caution appears on the
+Chill screen.
+</p>
+
+<h3>Where is my data stored?</h3>
+<p>
+Your notes and settings are stored only on your device and are never transmitted anywhere.
+Deleting the app also deletes them.
+See the <a href="./privacy.html">privacy policy</a> for details.
+</p>
+
+<h2>Contact</h2>
+<p>
+For feedback or bug reports:<br>
+<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>
+</p>
+
+</body>
+</html>
