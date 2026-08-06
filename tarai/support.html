@@ -1,1 +1,279 @@
-<h1>tarai Support</h1><p>TODO</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarai（盥） サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #171a1f;
+    background: #ece7df;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #d7d2c8; background: #15191f; }
+    a { color: #d9843c; }
+  }
+  h1 { font-size: 1.5rem; letter-spacing: .02em; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; }
+  hr { border: none; border-top: 1px solid #8884; margin: 3.5rem 0; }
+  a { color: #b06a2c; }
+  .muted { opacity: .7; font-size: .9rem; }
+  .caution { border: 1px solid #b06a2c; padding: 1rem 1.25rem; }
+</style>
+</head>
+<body>
+
+<h1>Tarai（盥） サポート</h1>
+<p class="muted">最終更新日：2026年8月7日</p>
+
+<p>
+Tarai（盥）は、服のタグに並ぶ<strong>洗濯表示の記号を画面上で組み立てて、その意味を引く</strong>盤です。
+記号の一覧表を持ちません。記号の名前を知らなくても、
+<strong>目の前のタグと同じ形を作る</strong>だけで意味に着きます。
+完全にオフラインで動作し、利用許可を一切求めません。
+</p>
+
+<div class="caution">
+<strong>はじめにお読みください。</strong>
+本アプリが示すのは記号の一般的な意味です。
+素材や染色によって適した洗い方は変わります。
+<strong>最終的な判断は、必ず衣類そのものに付いているタグに従ってください。</strong>
+</div>
+
+<h2>使いかた</h2>
+
+<h3>ダイヤル</h3>
+<p>
+この画面が本体です。中央に、いま組み立てている記号が大きく表示されます。
+</p>
+<ul>
+  <li><strong>基本形を選ぶ</strong>：中段の帯から、盥（洗い方）・三角（漂白）・四角（乾かし方）・
+      丸（クリーニング）・アイロン の5つのうち1つを選びます。左右にスワイプしても切り替わります。</li>
+  <li><strong>装飾を足す</strong>：下段のチップで、温度・強さ・禁止・線の本数などを選びます。
+      <strong>選んだ組み合わせでは存在しえない記号になるチップは、自動的に選べなくなります</strong>
+      （薄く表示されます）。たとえば盥に「70℃」を選ぶと、41種に存在しない「弱」は選べません。</li>
+  <li><strong>意味が出る</strong>：組み合わせが41種のちょうど1つに一致すると、
+      記号の下に意味が現れ、「くわしく」「服に貼る」のボタンがせり上がります。</li>
+</ul>
+<p>
+右上の「はじめから」で、選んだ装飾をすべて外して選び直せます。
+</p>
+
+<h3>記号の詳細（くわしく）</h3>
+<p>
+記号の意味と、補足の説明が読めます。
+自然乾燥の8種については、実際にどう干すのかが分かる写真を添えています。
+下段には同じ基本形のほかの記号が並ぶので、見比べて選び直せます。
+</p>
+
+<h3>衣類</h3>
+<p>
+服を登録しておけます。名前・色のタグ・記号（5つ）を持たせられます。
+ダイヤルで記号を確定させたあと「服に貼る」を押すと、その記号を既存の服に貼り付けられます。
+</p>
+
+<h3>組</h3>
+<p>
+登録した服の中から、<strong>一緒に洗いたいものを複数選ぶ</strong>と、
+まとめて洗う場合の条件が1行で出ます（例：「30°C・弱・漂白不可・乾燥機は使わない」）。
+その下に、<strong>なぜその条件になったのか、どの服が理由なのかが名指しで</strong>並びます。
+</p>
+
+<h3>設定</h3>
+<p>
+外観（システム / ライト / ダーク）と、言語（システム / 日本語 / English）を切り替えられます。
+</p>
+
+<h2>よくある質問</h2>
+
+<h3>タグを撮影して読み取れませんか</h3>
+<p>
+本アプリに撮影・読み取りの機能はありません。
+利用許可を一切求めない設計にしているため、カメラにもアクセスしません。
+記号は、ダイヤルで<strong>同じ形を作る</strong>ことで引きます。
+基本形を選んでから装飾を足していくと、数タップで着きます。
+</p>
+
+<h3>選びたいチップが薄くなっていて押せません</h3>
+<p>
+<strong>故障ではありません。</strong>
+いま選んでいる組み合わせに、そのチップを足すと<strong>41種のどれにも当たらない記号</strong>に
+なってしまう場合、そのチップは選べなくなります。
+たとえば盥＋「70℃」に「弱」を足した記号は、日本の洗濯表示には存在しません。
+「はじめから」で外すか、先に基本形や温度を選び直してください。
+</p>
+
+<h3>タグにある記号が見つかりません</h3>
+<p>
+次のいずれかの可能性があります。
+</p>
+<ul>
+  <li><strong>2016年11月以前の古い表示</strong>：2016年12月に記号が全面的に変わりました。
+      それ以前のタグ（22種の旧記号。洗濯機の絵や「弱」の文字が入ったものなど）は本アプリの対象外です。</li>
+  <li><strong>2024年の改正で追加された2種</strong>：手洗い30℃・スチームなしアイロンの2種は、
+      v1では対象にしていません。</li>
+  <li><strong>海外の表示</strong>：ISO 3758 に準拠する記号はおおむね共通ですが、
+      米国など独自の体系を併記している国もあります。</li>
+</ul>
+
+<h3>「組」の判定はどこまで信用できますか</h3>
+<p>
+判定は<strong>「選んだ服のうち最も厳しい条件に合わせる」</strong>という単純な規則によるものです。
+記号から読み取れることしか見ていません。
+<strong>色移りのしやすさ、生地どうしの摩擦、装飾の引っかかりは考慮していません。</strong>
+とくに色の濃い服と淡い服を一緒に洗ってよいかの判断には使わないでください。
+</p>
+
+<h3>登録した服はどこに保存されますか</h3>
+<p>
+利用者の端末内にのみ保存されます。外部に送信されることはありません。
+バックアップや他の端末との同期は行いません。
+アプリを削除すると、これらのデータも端末から削除されます。
+詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。
+</p>
+
+<h3>広告や課金はありますか</h3>
+<p>
+ありません。すべての機能を無料でご利用いただけます。
+</p>
+
+<h2>お問い合わせ</h2>
+<p>
+ご意見・不具合のご報告はこちらへお願いします。<br>
+<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>
+</p>
+
+<hr>
+
+<h1>Tarai Support</h1>
+<p class="muted">Last updated: August 7, 2026</p>
+
+<p>
+Tarai is a dial for <strong>assembling the care symbols printed on a garment's label</strong>
+and reading back what they mean. It holds no index of symbols: you do not need to know a symbol's
+name, only to <strong>build the same shape you are looking at</strong>.
+It works entirely offline and requests no permissions of any kind.
+</p>
+
+<div class="caution">
+<strong>Please read this first.</strong>
+What the app shows are the general meanings of the symbols.
+The treatment that actually suits a garment varies with its fibre and dye.
+<strong>Always follow the label attached to the garment itself when making the final decision.</strong>
+</div>
+
+<h2>How to Use</h2>
+
+<h3>Dial</h3>
+<p>
+This is the heart of the app. The symbol you are currently assembling is shown large in the centre.
+</p>
+<ul>
+  <li><strong>Choose a base shape</strong>: from the band in the middle, pick one of five —
+      washtub (washing), triangle (bleaching), square (drying), circle (professional care),
+      or iron. Swiping left and right also moves between them.</li>
+  <li><strong>Add modifiers</strong>: use the chips below to set temperature, gentleness,
+      prohibition, number of bars, and so on.
+      <strong>Any chip that would produce a symbol which does not exist is disabled automatically</strong>
+      and shown faded. Choose 70°C on the washtub, for instance, and "gentle" becomes unavailable,
+      because no such symbol exists among the 41.</li>
+  <li><strong>The meaning appears</strong>: as soon as your combination matches exactly one of the 41
+      symbols, its meaning appears beneath it and the "Detail" and "Attach to garment" buttons rise
+      into view.</li>
+</ul>
+<p>
+"Reset" at the top right clears every modifier so you can start again.
+</p>
+
+<h3>Symbol Detail</h3>
+<p>
+Shows the meaning of the symbol together with a fuller explanation.
+For the eight natural-drying symbols, a photograph shows what the drying actually looks like.
+Other symbols sharing the same base shape are listed below, so you can compare and pick another.
+</p>
+
+<h3>Garments</h3>
+<p>
+Register your clothes with a name, a colour tag, and up to five symbols.
+Once a symbol is resolved on the dial, "Attach to garment" adds it to one of your registered items.
+</p>
+
+<h3>Batch</h3>
+<p>
+Select several of your registered garments to wash together, and the app states the combined
+condition in a single line (for example, "30°C · gentle · do not bleach · do not tumble dry").
+Below it, <strong>each part of that condition is explained, naming the garment responsible for it.</strong>
+</p>
+
+<h3>Settings</h3>
+<p>
+Switch appearance (System / Light / Dark) and language (System / Japanese / English).
+</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Can it read a label from a photo?</h3>
+<p>
+No. The app has no photography or scanning feature; it is designed to request no permissions at all,
+so it never accesses the camera. You look a symbol up by <strong>building the same shape</strong> on
+the dial — pick the base shape, then add modifiers, and you arrive in a few taps.
+</p>
+
+<h3>A chip I want is faded and cannot be tapped</h3>
+<p>
+<strong>This is not a fault.</strong>
+If adding that chip to your current combination would produce a symbol that matches
+<strong>none of the 41</strong>, the chip is disabled.
+A washtub marked 70°C together with "gentle", for example, does not exist in the Japanese system.
+Use "Reset", or change the base shape or temperature first.
+</p>
+
+<h3>I can't find a symbol that's on my label</h3>
+<p>
+One of the following is likely:
+</p>
+<ul>
+  <li><strong>A label from before December 2016</strong>: the symbols were replaced wholesale at that
+      point. Older labels (the 22 previous symbols, such as those drawing a washing machine or
+      carrying Japanese text) are outside the scope of this app.</li>
+  <li><strong>One of the two symbols added in the 2024 revision</strong>: hand wash at 30°C and iron
+      without steam are not covered in v1.</li>
+  <li><strong>A label from another country</strong>: symbols conforming to ISO 3758 are largely
+      shared, but some countries — the United States among them — also print their own system.</li>
+</ul>
+
+<h3>How far can I trust the Batch judgement?</h3>
+<p>
+It follows a single simple rule: <strong>adopt the strictest condition</strong> among the garments you
+selected. It considers only what the symbols themselves express.
+<strong>It does not account for dye bleeding, abrasion between fabrics, or snagging trims.</strong>
+In particular, do not use it to decide whether dark and light garments may be washed together.
+</p>
+
+<h3>Where are my registered garments stored?</h3>
+<p>
+Only on your device. Nothing is transmitted externally, and there is no backup or synchronisation
+with other devices. Deleting the app also deletes this data.
+See the <a href="./privacy.html">Privacy Policy</a> for details.
+</p>
+
+<h3>Is there advertising or in-app purchase?</h3>
+<p>
+No. Every feature is free to use.
+</p>
+
+<h2>Contact</h2>
+<p>
+For feedback or bug reports, please write to<br>
+<a href="mailto:lapistellar@gmail.com">lapistellar@gmail.com</a>
+</p>
+
+</body>
+</html>
